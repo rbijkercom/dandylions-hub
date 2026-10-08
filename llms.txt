@@ -1,39 +1,134 @@
 # DandyLions hub
 
-> Single source of truth for DandyLions (founder Fabio Bortolazzi): design system, voice and published source material for LinkedIn and Instagram content. Read-only reference maintained by Ruben Bijker. Never invent facts or quotes; gaps are marked [TO BE SUPPLIED BY RUBEN: ...].
+> Visual reference for DandyLions: design tokens, real template images (social posts, presentation slides, newsletter, brand guide pages) and brand assets (logos, icons, graphic devices). Read-only, maintained by Ruben Bijker. No copywriting guidance: only how things look.
 
 Everything in one file: https://rbijkercom.github.io/dandylions-hub/llms-full.txt
+Machine-readable list: https://rbijkercom.github.io/dandylions-hub/manifest.json
 
-## Start here
+## Design tokens
 
-- [README.md](https://rbijkercom.github.io/dandylions-hub/): What the hub is and its rules
-- [project-instructions.md](https://rbijkercom.github.io/dandylions-hub/project-instructions.html): Instructions for Claude: sources, voice, LinkedIn and Instagram, output format
+- [Design tokens (curated)](https://rbijkercom.github.io/dandylions-hub/design-system/tokens.json): Colours, themes, typography, spacing, radius, effects and motion. The main file to read.
+- [CSS custom properties (raw snapshot)](https://rbijkercom.github.io/dandylions-hub/design-system/css-tokens.json): Mechanical snapshot of the website's CSS variables, refreshed by the daily sync from the site repo.
 
-## Voice
+## Social post templates (LinkedIn, Instagram)
 
-- [voice/voice-and-tone.md](https://rbijkercom.github.io/dandylions-hub/voice/voice-and-tone.html): Who speaks (I vs we), tone, vocabulary, style rules
-- [voice/multilingual-glossary.md](https://rbijkercom.github.io/dandylions-hub/voice/multilingual-glossary.html): Official EN / IT / NL terms
+- [LinkedIn post: insight quote](https://rbijkercom.github.io/dandylions-hub/templates/social/linkedin-post-01-insight-quote.png): PNG, 1200 x 1200 px. LinkedIn post (square).
+- [LinkedIn post: service highlight](https://rbijkercom.github.io/dandylions-hub/templates/social/linkedin-post-02-service-highlight.png): PNG, 1200 x 1200 px. LinkedIn post (square).
+- [LinkedIn post: event](https://rbijkercom.github.io/dandylions-hub/templates/social/linkedin-post-03-event.png): PNG, 1200 x 1200 px. LinkedIn post (square).
+- [LinkedIn link image: article](https://rbijkercom.github.io/dandylions-hub/templates/social/linkedin-link-01-article.png): PNG, 1200 x 627 px. LinkedIn link image.
+- [LinkedIn link image: statement](https://rbijkercom.github.io/dandylions-hub/templates/social/linkedin-link-02-statement.png): PNG, 1200 x 627 px. LinkedIn link image.
+- [LinkedIn company banner](https://rbijkercom.github.io/dandylions-hub/templates/social/linkedin-company-banner.png): PNG, 1128 x 191 px. LinkedIn company page banner.
+- [LinkedIn avatar](https://rbijkercom.github.io/dandylions-hub/templates/social/linkedin-avatar.png): PNG, 400 x 400 px. LinkedIn avatar / profile image.
+- [Instagram post: archetype](https://rbijkercom.github.io/dandylions-hub/templates/social/instagram-post-01-archetype.png): PNG, 1080 x 1080 px. Instagram feed post (square).
+- [Instagram post: big numbers](https://rbijkercom.github.io/dandylions-hub/templates/social/instagram-post-02-numbers.png): PNG, 1080 x 1080 px. Instagram feed post (square).
+- [Instagram post: statement](https://rbijkercom.github.io/dandylions-hub/templates/social/instagram-post-03-statement.png): PNG, 1080 x 1080 px. Instagram feed post (square).
+- [Instagram carousel 1/4: cover](https://rbijkercom.github.io/dandylions-hub/templates/social/instagram-carousel-1-cover.png): PNG, 1080 x 1350 px. Instagram carousel slide (portrait).
+- [Instagram carousel 2/4: content](https://rbijkercom.github.io/dandylions-hub/templates/social/instagram-carousel-2-content.png): PNG, 1080 x 1350 px. Instagram carousel slide (portrait).
+- [Instagram carousel 3/4: content](https://rbijkercom.github.io/dandylions-hub/templates/social/instagram-carousel-3-content.png): PNG, 1080 x 1350 px. Instagram carousel slide (portrait).
+- [Instagram carousel 4/4: closing](https://rbijkercom.github.io/dandylions-hub/templates/social/instagram-carousel-4-closing.png): PNG, 1080 x 1350 px. Instagram carousel slide (portrait).
+- [Instagram story: three steps](https://rbijkercom.github.io/dandylions-hub/templates/social/instagram-story-01-steps.png): PNG, 1080 x 1920 px. Instagram story (vertical).
+- [Instagram story: event](https://rbijkercom.github.io/dandylions-hub/templates/social/instagram-story-02-event.png): PNG, 1080 x 1920 px. Instagram story (vertical).
+- [Social pack spec sheet](https://rbijkercom.github.io/dandylions-hub/templates/social/social-pack-spec-sheet.png): PNG, 1600 x 1820 px. Spec sheet.
 
-## Design system
+## Presentation templates (PowerPoint master layouts, 16:9)
 
-- [design-system/brand-rules.md](https://rbijkercom.github.io/dandylions-hub/design-system/brand-rules.html): Name, tagline, logo and lion mark, graphic devices, imagery, do and don't
-- [design-system/social-formats.md](https://rbijkercom.github.io/dandylions-hub/design-system/social-formats.html): LinkedIn and Instagram sizes, safe zones, Figma templates
-- [design-system/tokens.json](https://rbijkercom.github.io/dandylions-hub/design-system/tokens.json): Colours, themes, typography, spacing, radius, grain
+- [Slide 01: title (sage)](https://rbijkercom.github.io/dandylions-hub/templates/slides/slide-01-title-sage.png): PNG, 1920 x 1080 px. Presentation slide 16:9.
+- [Slide 01b: title (light)](https://rbijkercom.github.io/dandylions-hub/templates/slides/slide-01b-title-light.png): PNG, 1920 x 1080 px. Presentation slide 16:9.
+- [Slide 02: section divider (sage)](https://rbijkercom.github.io/dandylions-hub/templates/slides/slide-02-section-divider-sage.png): PNG, 1920 x 1080 px. Presentation slide 16:9.
+- [Slide 02b: section divider (light)](https://rbijkercom.github.io/dandylions-hub/templates/slides/slide-02b-section-divider-light.png): PNG, 1920 x 1080 px. Presentation slide 16:9.
+- [Slide 03: title and text](https://rbijkercom.github.io/dandylions-hub/templates/slides/slide-03-title-text-light.png): PNG, 1920 x 1080 px. Presentation slide 16:9.
+- [Slide 04: two columns](https://rbijkercom.github.io/dandylions-hub/templates/slides/slide-04-two-columns-light.png): PNG, 1920 x 1080 px. Presentation slide 16:9.
+- [Slide 05: image and text (light)](https://rbijkercom.github.io/dandylions-hub/templates/slides/slide-05-image-text-light.png): PNG, 1920 x 1080 px. Presentation slide 16:9.
+- [Slide 05b: image and text (sage)](https://rbijkercom.github.io/dandylions-hub/templates/slides/slide-05b-image-text-sage.png): PNG, 1920 x 1080 px. Presentation slide 16:9.
+- [Slide 06: full-bleed photo](https://rbijkercom.github.io/dandylions-hub/templates/slides/slide-06-full-bleed-photo.png): PNG, 1920 x 1080 px. Presentation slide 16:9.
+- [Slide 07: quote (sage)](https://rbijkercom.github.io/dandylions-hub/templates/slides/slide-07-quote-sage.png): PNG, 1920 x 1080 px. Presentation slide 16:9.
+- [Slide 07b: quote (light)](https://rbijkercom.github.io/dandylions-hub/templates/slides/slide-07b-quote-light.png): PNG, 1920 x 1080 px. Presentation slide 16:9.
+- [Slide 08: big numbers](https://rbijkercom.github.io/dandylions-hub/templates/slides/slide-08-big-numbers-light.png): PNG, 1920 x 1080 px. Presentation slide 16:9.
+- [Slide 09: agenda](https://rbijkercom.github.io/dandylions-hub/templates/slides/slide-09-agenda-light.png): PNG, 1920 x 1080 px. Presentation slide 16:9.
+- [PowerPoint master spec sheet](https://rbijkercom.github.io/dandylions-hub/templates/slides/powerpoint-setup-spec-sheet.png): PNG, 3960 x 1244 px. Spec sheet.
 
-## Sources
+## Email newsletter template
 
-- [sources/README.md](https://rbijkercom.github.io/dandylions-hub/sources/): What each source holds and its status; placeholder rules
-- [sources/about.md](https://rbijkercom.github.io/dandylions-hub/sources/about.html): Fabio, archetypes, vision and mission, track record, testimonials, contact
-- [sources/offerings/insights.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/insights.html): Insights (Clarity): formats and newsletter
-- [sources/offerings/educational-events.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/educational-events.html): Educational Events: five topics
-- [sources/offerings/consulting.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/consulting.html): Consulting (Impact): Ready/Set/Go, services, Team Alignment
-- [sources/offerings/project-coaching.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/project-coaching.html): Project Coaching
-- [sources/offerings/policy-compass.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/policy-compass.html): Policy Compass
-- [sources/offerings/collaborative-kitchen.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/collaborative-kitchen.html): Collaborative Kitchen
-- [sources/offerings/the-story-beneath.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/the-story-beneath.html): The Story Beneath
-- [sources/offerings/pattern-weaver-approach.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/pattern-weaver-approach.html): Pattern Weaver Approach: technical vs adaptive, four loyalties
-- [sources/articles.md](https://rbijkercom.github.io/dandylions-hub/sources/articles.html): Field notes: titles and deks
-- [sources/linkedin/README.md](https://rbijkercom.github.io/dandylions-hub/sources/linkedin/): How to write LinkedIn posts
-- [sources/linkedin/post-template.md](https://rbijkercom.github.io/dandylions-hub/sources/linkedin/post-template.html): LinkedIn draft template
-- [sources/instagram/README.md](https://rbijkercom.github.io/dandylions-hub/sources/instagram/): How to write Instagram posts
-- [sources/instagram/post-template.md](https://rbijkercom.github.io/dandylions-hub/sources/instagram/post-template.html): Instagram draft template
+- [Newsletter: desktop (600 px)](https://rbijkercom.github.io/dandylions-hub/templates/email/newsletter-desktop-600.png): PNG, 600 x 1507 px. Email (Brevo).
+- [Newsletter: mobile (375 px)](https://rbijkercom.github.io/dandylions-hub/templates/email/newsletter-mobile-375.png): PNG, 375 x 1788 px. Email (Brevo).
+
+## Brand identity guide pages (visual reference)
+
+- [Brand guide 01: cover](https://rbijkercom.github.io/dandylions-hub/templates/brand-guide/brand-guide-01-cover.png): PNG, 1920 x 1080 px. Guide page 16:9.
+- [Brand guide 03: logo formats](https://rbijkercom.github.io/dandylions-hub/templates/brand-guide/brand-guide-03-logo-formats.png): PNG, 1920 x 1080 px. Guide page 16:9.
+- [Brand guide 04: clear space and minimum size](https://rbijkercom.github.io/dandylions-hub/templates/brand-guide/brand-guide-04-logo-clear-space.png): PNG, 1920 x 1080 px. Guide page 16:9.
+- [Brand guide 05: colour palette](https://rbijkercom.github.io/dandylions-hub/templates/brand-guide/brand-guide-05-colour-palette.png): PNG, 1920 x 1080 px. Guide page 16:9.
+- [Brand guide 06: themes and accents](https://rbijkercom.github.io/dandylions-hub/templates/brand-guide/brand-guide-06-themes-accents.png): PNG, 1920 x 1080 px. Guide page 16:9.
+- [Brand guide 07: typography](https://rbijkercom.github.io/dandylions-hub/templates/brand-guide/brand-guide-07-typography.png): PNG, 1920 x 1080 px. Guide page 16:9.
+- [Brand guide 08: photography](https://rbijkercom.github.io/dandylions-hub/templates/brand-guide/brand-guide-08-photography.png): PNG, 1920 x 1080 px. Guide page 16:9.
+- [Brand guide 09: iconography](https://rbijkercom.github.io/dandylions-hub/templates/brand-guide/brand-guide-09-iconography.png): PNG, 1920 x 1080 px. Guide page 16:9.
+- [Brand guide 10: graphic elements](https://rbijkercom.github.io/dandylions-hub/templates/brand-guide/brand-guide-10-graphic-elements.png): PNG, 1920 x 1080 px. Guide page 16:9.
+- [Brand guide 11: UI elements](https://rbijkercom.github.io/dandylions-hub/templates/brand-guide/brand-guide-11-ui-elements.png): PNG, 1920 x 1080 px. Guide page 16:9.
+
+## Logos
+
+- [Full lockup, charcoal](https://rbijkercom.github.io/dandylions-hub/assets/logos/lockup-charcoal.svg): SVG, viewBox 0 0 200 294.091. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/logos/lockup-charcoal.svg
+- [Full lockup, ivory](https://rbijkercom.github.io/dandylions-hub/assets/logos/lockup-ivory.svg): SVG, viewBox 0 0 200 294.091. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/logos/lockup-ivory.svg
+- [Full lockup, charcoal (PNG)](https://rbijkercom.github.io/dandylions-hub/assets/logos/lockup-charcoal@4x.png): PNG, 800 x 1177 px.
+- [Full lockup, ivory (PNG)](https://rbijkercom.github.io/dandylions-hub/assets/logos/lockup-ivory@4x.png): PNG, 800 x 1177 px.
+- [Lion symbol, charcoal](https://rbijkercom.github.io/dandylions-hub/assets/logos/symbol-lion-charcoal.svg): SVG, viewBox 0 0 200 200. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/logos/symbol-lion-charcoal.svg
+- [Lion symbol, ivory](https://rbijkercom.github.io/dandylions-hub/assets/logos/symbol-lion-ivory.svg): SVG, viewBox 0 0 200 200. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/logos/symbol-lion-ivory.svg
+- [Wordmark, charcoal](https://rbijkercom.github.io/dandylions-hub/assets/logos/wordmark-charcoal.svg): SVG, viewBox 0 0 180 40.3636. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/logos/wordmark-charcoal.svg
+- [Wordmark, ivory](https://rbijkercom.github.io/dandylions-hub/assets/logos/wordmark-ivory.svg): SVG, viewBox 0 0 180 40.3636. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/logos/wordmark-ivory.svg
+- [Website logo symbol](https://rbijkercom.github.io/dandylions-hub/assets/logos/logo-symbol-site.svg): SVG, viewBox 0 0 110 110. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/logos/logo-symbol-site.svg
+- [Original lion artwork](https://rbijkercom.github.io/dandylions-hub/assets/logos/lion-artwork-original.svg): SVG, viewBox 0 0 945 945. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/logos/lion-artwork-original.svg
+- [Lion artwork, charcoal (PNG)](https://rbijkercom.github.io/dandylions-hub/assets/logos/lion-charcoal.png): PNG, 945 x 945 px.
+- [Lion artwork, ivory (PNG)](https://rbijkercom.github.io/dandylions-hub/assets/logos/lion-ivory.png): PNG, 945 x 945 px.
+- [Logo mark button, charcoal](https://rbijkercom.github.io/dandylions-hub/assets/logos/mark-button-charcoal.png): PNG, 192 x 192 px.
+- [Logo mark button, ivory](https://rbijkercom.github.io/dandylions-hub/assets/logos/mark-button-ivory.png): PNG, 192 x 192 px.
+- [Favicon](https://rbijkercom.github.io/dandylions-hub/assets/logos/favicon.ico): ICO, 32 x 32 px.
+
+## Icons (design-system icon set)
+
+- [Alert / error (circle with exclamation mark)](https://rbijkercom.github.io/dandylions-hub/assets/icons/alert.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/alert.svg
+- [Archetype: dandelion](https://rbijkercom.github.io/dandylions-hub/assets/icons/archetype-dandelion.svg): SVG, viewBox 0 0 32 32. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/archetype-dandelion.svg
+- [Archetype: dandy](https://rbijkercom.github.io/dandylions-hub/assets/icons/archetype-dandy.svg): SVG, viewBox 0 0 32 32. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/archetype-dandy.svg
+- [Archetype: lion (sun-like face)](https://rbijkercom.github.io/dandylions-hub/assets/icons/archetype-lion.svg): SVG, viewBox 0 0 32 32. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/archetype-lion.svg
+- [Arrow up-right (open, external link)](https://rbijkercom.github.io/dandylions-hub/assets/icons/arrow-up-right.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/arrow-up-right.svg
+- [Check mark (bullets, success)](https://rbijkercom.github.io/dandylions-hub/assets/icons/check.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/check.svg
+- [Chevron down](https://rbijkercom.github.io/dandylions-hub/assets/icons/chevron-down.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/chevron-down.svg
+- [Chevron left](https://rbijkercom.github.io/dandylions-hub/assets/icons/chevron-left.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/chevron-left.svg
+- [Chevron right](https://rbijkercom.github.io/dandylions-hub/assets/icons/chevron-right.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/chevron-right.svg
+- [Chevron up](https://rbijkercom.github.io/dandylions-hub/assets/icons/chevron-up.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/chevron-up.svg
+- [Close (X)](https://rbijkercom.github.io/dandylions-hub/assets/icons/close.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/close.svg
+- [Compass (diamond in circle)](https://rbijkercom.github.io/dandylions-hub/assets/icons/compass.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/compass.svg
+- [Dandelion artwork (small)](https://rbijkercom.github.io/dandylions-hub/assets/icons/dandelion-artwork.svg): SVG, viewBox 0 0 17.2 29.2. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/dandelion-artwork.svg
+- [Eye: vision](https://rbijkercom.github.io/dandylions-hub/assets/icons/eye.svg): SVG, viewBox 0 0 24 24. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/eye.svg
+- [Instagram](https://rbijkercom.github.io/dandylions-hub/assets/icons/instagram.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/instagram.svg
+- [LinkedIn](https://rbijkercom.github.io/dandylions-hub/assets/icons/linkedin.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/linkedin.svg
+- [Lion artwork (small line icon)](https://rbijkercom.github.io/dandylions-hub/assets/icons/lion-artwork.svg): SVG, viewBox 0 0 29.2006 29.2001. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/lion-artwork.svg
+- [Mail / envelope](https://rbijkercom.github.io/dandylions-hub/assets/icons/mail.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/mail.svg
+- [Map pin / location](https://rbijkercom.github.io/dandylions-hub/assets/icons/map-pin.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/map-pin.svg
+- [Menu (three lines)](https://rbijkercom.github.io/dandylions-hub/assets/icons/menu.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/menu.svg
+- [Minus](https://rbijkercom.github.io/dandylions-hub/assets/icons/minus.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/minus.svg
+- [Compass: mission](https://rbijkercom.github.io/dandylions-hub/assets/icons/mission-compass.svg): SVG, viewBox 0 0 24 24. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/mission-compass.svg
+- [Plus](https://rbijkercom.github.io/dandylions-hub/assets/icons/plus.svg): SVG, viewBox 0 0 18 18. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/plus.svg
+- [Sprout: legacy](https://rbijkercom.github.io/dandylions-hub/assets/icons/sprout.svg): SVG, viewBox 0 0 24 24. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/sprout.svg
+- [Trend up: ambition](https://rbijkercom.github.io/dandylions-hub/assets/icons/trend-up.svg): SVG, viewBox 0 0 24 24. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/icons/trend-up.svg
+
+## Graphic devices and textures
+
+- [Dandelion seed head](https://rbijkercom.github.io/dandylions-hub/assets/svg/seed-head.svg): SVG, viewBox 0 0 527.5 493.4. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/svg/seed-head.svg
+- [Drifting seed](https://rbijkercom.github.io/dandylions-hub/assets/svg/drifting-seed.svg): SVG, viewBox 0 0 36 94. Raw text: https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/assets/svg/drifting-seed.svg
+- [Paper grain texture](https://rbijkercom.github.io/dandylions-hub/assets/graphics/paper-grain.png): PNG, 300 x 300 px.
+
+## Not included (placeholders)
+
+- Closing / contact slide (Presentation kit layout 10): It exists in Figma (node 372:16276) but shows company registration and VAT numbers and a personal email address, so it is left out. [TO BE SUPPLIED BY RUBEN: a closing slide without registration numbers or personal contact details]
+- PowerPoint template file (.potx): Only the Figma layouts exist; no .potx file was found. [TO BE SUPPLIED BY RUBEN: the .potx master once built]
+- Stationery (letterhead, invoice, quote, business cards, email signature, compliments slip, envelope): They exist in Figma (Stationery kit, node 372:16353) but carry an address, phone number and personal email, so they are left out. [TO BE SUPPLIED BY RUBEN: cleared stationery images, if they should be here]
+- Speaker kit (A4 PDF pages, speaker page): It exists in Figma (node 372:15781) but includes a personal email address, so it is left out. [TO BE SUPPLIED BY RUBEN: cleared speaker kit images, if they should be here]
+- Newsletter footer: Cropped out of the newsletter images because it shows company registration and VAT numbers. [TO BE SUPPLIED BY RUBEN: a footer version without them, if needed]
+- Video / reel covers and animated formats: None found in Figma or the site repo. [TO BE SUPPLIED BY RUBEN: if wanted]
+- Horizontal (side-by-side) logo lockup: None found; only the stacked lockup, symbol and wordmark exist. [TO BE SUPPLIED BY RUBEN: if wanted]
+
+## Optional
+
+- [Claude Project setup](https://rbijkercom.github.io/dandylions-hub/project-instructions.html)
+- [Template gallery](https://rbijkercom.github.io/dandylions-hub/templates/)
+- [Logos and icons gallery](https://rbijkercom.github.io/dandylions-hub/assets/)

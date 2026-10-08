@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Design tokens · DandyLions hub</title><link rel="icon" href="../assets/logos/favicon.ico"><style>
+body{margin:0;background:#F5F2EC;color:#2D2D2D;font:16px/1.5 'Hanken Grotesk',Arial,Helvetica,sans-serif}
+main{max-width:1200px;margin:0 auto;padding:40px 24px 80px}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;line-height:1.15}
+h1{font-size:44px;margin:0 0 8px}h2{font-size:30px;margin:48px 0 8px;border-top:1px solid #E3DDCE;padding-top:24px}h3{font-size:20px;margin:0 0 4px}
+a{color:#7A663C}code{font-size:13px;background:#E9E8DF;padding:1px 4px;border-radius:4px;word-break:break-all}
+nav a{margin-right:16px;text-transform:uppercase;letter-spacing:1.5px;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.card{background:#FBF9F4;border:1px solid #E3DDCE;border-radius:12px;padding:12px;font-size:14px}
+.card img{width:100%;height:220px;object-fit:contain;background:#E9E8DF;border-radius:8px;margin-bottom:8px}
+.card.icon img{height:72px;background:#F5F2EC}
+.meta{color:#454340;font-size:13px}
+.ph{background:#FBF9F4;border:1px dashed #907948;border-radius:12px;padding:12px;margin:8px 0}
+table{border-collapse:collapse;width:100%;font-size:14px}td,th{border-bottom:1px solid #E3DDCE;padding:6px;text-align:left;vertical-align:top}
+.sw{display:inline-block;width:28px;height:28px;border-radius:6px;border:1px solid #CFCEC6;vertical-align:middle}
+</style></head>
+<body><main>
+<nav><a href="../">Hub</a><a href="../design-system/">Tokens</a><a href="../templates/">Templates</a><a href="../assets/">Logos &amp; icons</a><a href="../project-instructions.html">Claude setup</a><a href="../llms-full.txt">llms-full.txt</a></nav>
+<h1>Design tokens</h1>
+<p>Machine-readable: <a href="tokens.json">tokens.json</a> (curated, read this first) and <a href="css-tokens.json">css-tokens.json</a> (raw CSS custom properties from the website, refreshed by the daily sync). When the website and Figma disagree, the website wins.</p>
+<h2>Colour primitives</h2><table><tr><th></th><th>Name</th><th>Hex</th><th>Role</th></tr><tr><td><span class="sw" style="background:#F5F2EC"></span></td><td>ivory</td><td><code>#F5F2EC</code></td><td>Primary canvas (Light theme page)</td></tr><tr><td><span class="sw" style="background:#748262"></span></td><td>sage</td><td><code>#748262</code></td><td>Signature field, large areas (Inverted theme page)</td></tr><tr><td><span class="sw" style="background:#2D2D2D"></span></td><td>charcoal</td><td><code>#2D2D2D</code></td><td>Primary text and ink, logo on Light</td></tr><tr><td><span class="sw" style="background:#907948"></span></td><td>gold</td><td><code>#907948</code></td><td>Quiet accent, hover fill, rules and seeds</td></tr><tr><td><span class="sw" style="background:#7A663C"></span></td><td>gold-deep</td><td><code>#7A663C</code></td><td>Accent text (overlines) on ivory, pressed gold</td></tr><tr><td><span class="sw" style="background:#C6CAB9"></span></td><td>pale-sage</td><td><code>#C6CAB9</code></td><td>Soft surface, selection, photo placeholders</td></tr><tr><td><span class="sw" style="background:#454340"></span></td><td>body-ink</td><td><code>#454340</code></td><td>Body text on ivory and cards</td></tr><tr><td><span class="sw" style="background:#FBF9F4"></span></td><td>card-surface</td><td><code>#FBF9F4</code></td><td>Content cards</td></tr><tr><td><span class="sw" style="background:#E3DDCE"></span></td><td>card-border</td><td><code>#E3DDCE</code></td><td>Card outline and divider</td></tr><tr><td><span class="sw" style="background:#E9E8DF"></span></td><td>control-fill</td><td><code>#E9E8DF</code></td><td>Button and pill fill</td></tr><tr><td><span class="sw" style="background:#CFCEC6"></span></td><td>control-border</td><td><code>#CFCEC6</code></td><td>Pill and divider borders</td></tr><tr><td><span class="sw" style="background:#C3C0A6"></span></td><td>selected-sand</td><td><code>#C3C0A6</code></td><td>Selected tab segment, pressed button</td></tr><tr><td><span class="sw" style="background:#F1EEE6"></span></td><td>option-hover</td><td><code>#F1EEE6</code></td><td>Hover on menu options</td></tr><tr><td><span class="sw" style="background:#B0B3A5"></span></td><td>selector-border</td><td><code>#B0B3A5</code></td><td>Selection border</td></tr><tr><td><span class="sw" style="background:#9E3B2B"></span></td><td>error</td><td><code>#9E3B2B</code></td><td>Feedback error on Light</td></tr><tr><td><span class="sw" style="background:#FF9F9F"></span></td><td>error-deep</td><td><code>#FF9F9F</code></td><td>Feedback error on Inverted (sage)</td></tr></table>
+<p class="meta">Themes, accents and semantic colours: see <code>color</code> and <code>themes</code> in tokens.json.</p>
+<h2>Type families</h2><table><tr><th></th><th>Family</th><th>Weights</th><th>Use</th><th>Fallback</th></tr><tr><td>serif</td><td>Cormorant Garamond</td><td>300 Light, 400 Regular, 400 Italic, 600 SemiBold</td><td>Headings, brand, quotes, ledes, editorial paragraphs</td><td>Georgia, &#x27;Times New Roman&#x27;, serif</td></tr><tr><td>sans</td><td>Hanken Grotesk</td><td>400 Regular</td><td>Body, lists, card copy, labels, UI controls</td><td>Arial, Helvetica, sans-serif</td></tr></table>
+<h2>Type scale</h2><table><tr><th>Style</th><th>Family</th><th>Weight</th><th>Size</th><th>Line height</th><th>Tracking</th></tr><tr><td>display</td><td>serif</td><td>300</td><td>44px mobile / 60px from 768px</td><td>1.04</td><td>-3%</td></tr><tr><td>h1</td><td>serif</td><td>400</td><td>32px mobile / 40px desktop</td><td>36px / 46px</td><td>-0.32px / -0.4px</td></tr><tr><td>h2</td><td>serif</td><td>400</td><td>32px</td><td>38px</td><td>-0.32px</td></tr><tr><td>h3</td><td>serif</td><td>400</td><td>24px</td><td>30px</td><td>-0.24px</td></tr><tr><td>h4</td><td>serif</td><td>400</td><td>20px</td><td>26px</td><td></td></tr><tr><td>lead</td><td>serif</td><td>300</td><td>20px mobile / 28px desktop</td><td>1.44</td><td></td></tr><tr><td>reading</td><td>serif</td><td>300</td><td>18–24px</td><td>1.42</td><td>-0.005em</td></tr><tr><td>supportingItalic</td><td>serif</td><td>400</td><td>22px</td><td>30px</td><td></td></tr><tr><td>emphasis</td><td>serif</td><td>600</td><td>20px</td><td>26px</td><td></td></tr><tr><td>routeTitle</td><td>serif</td><td>400</td><td>46px</td><td>58px</td><td>-0.46px</td></tr><tr><td>wordmark</td><td>serif</td><td>300</td><td>34–84px</td><td>0.95</td><td>-0.035em</td></tr><tr><td>bodyLarge</td><td>sans</td><td>400</td><td>18px</td><td>28px</td><td></td></tr><tr><td>body</td><td>sans</td><td>400</td><td>16px</td><td>24px</td><td></td></tr><tr><td>bodySmall</td><td>sans</td><td>400</td><td>14px</td><td>21px</td><td></td></tr><tr><td>caption</td><td>sans</td><td>400</td><td>12px</td><td>18px</td><td></td></tr><tr><td>uiLabel</td><td>sans</td><td>400</td><td>14px</td><td>20px</td><td>1.5px</td></tr><tr><td>uiControl</td><td>sans</td><td>400</td><td>12px</td><td>20px</td><td>1.2px</td></tr><tr><td>overline</td><td>sans</td><td>400</td><td>11px</td><td>20px</td><td>2.4px</td></tr></table>
+<h2>Spacing, radius, effects</h2><pre><code>{
+  &quot;spacing&quot;: {
+    &quot;scale&quot;: [
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64,
+      80,
+      96,
+      120
+    ],
+    &quot;sectionGap&quot;: 96,
+    &quot;pageMargin&quot;: {
+      &quot;mobile&quot;: 24,
+      &quot;tablet&quot;: 48,
+      &quot;desktop&quot;: 64
+    },
+    &quot;gridGutter&quot;: {
+      &quot;mobile&quot;: 16,
+      &quot;tabletUp&quot;: 24
+    },
+    &quot;gridColumnsMobile&quot;: 4,
+    &quot;contentMaxWidth&quot;: 1312,
+    &quot;readingMeasure&quot;: 720,
+    &quot;controlMin&quot;: 44,
+    &quot;breakpoints&quot;: [
+      768,
+      1200
+    ],
+    &quot;unit&quot;: &quot;px&quot;
+  },
+  &quot;radius&quot;: {
+    &quot;pill&quot;: 999,
+    &quot;card&quot;: 12,
+    &quot;field&quot;: 8,
+    &quot;small&quot;: 4
+  },
+  &quot;effects&quot;: {
+    &quot;grain&quot;: {
+      &quot;description&quot;: &quot;Fixed paper-grain overlay on ivory and sage (feTurbulence fractalNoise, baseFrequency 0.85), 150px tile&quot;,
+      &quot;opacity&quot;: 0.035,
+      &quot;asset&quot;: &quot;https://rbijkercom.github.io/dandylions-hub/assets/graphics/paper-grain.png&quot;
+    },
+    &quot;hoverLift&quot;: {
+      &quot;type&quot;: &quot;drop-shadow&quot;,
+      &quot;offset&quot;: &quot;0 8px&quot;,
+      &quot;blur&quot;: 16,
+      &quot;color&quot;: &quot;rgb(144 121 72 / 20%)&quot;
+    }
+  },
+  &quot;motion&quot;: {
+    &quot;ease&quot;: &quot;cubic-bezier(0.33, 0, 0.15, 1)&quot;
+  }
+}</code></pre>
+<p class="meta" style="margin-top:64px">DandyLions hub. Read-only reference, maintained by Ruben Bijker. Updated 2026-10-08.</p>
+</main></body></html>

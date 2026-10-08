@@ -1,13 +1,15 @@
 name: Sync design tokens from site
 
-# Pulls the token and theme source files from the private site repo
-# rbijkercom/dandy-lions and opens a pull request when they change.
+# Daily, tokens only: reads src/app/(frontend)/styles.css from the private site
+# repo rbijkercom/dandy-lions, extracts the CSS custom properties into
+# design-system/css-tokens.json and opens a pull request when they change.
+# Nothing else is copied from the site repo.
 # Requires the repository secret DANDY_LIONS_READ_TOKEN: a fine-grained PAT
 # limited to rbijkercom/dandy-lions with Contents: Read-only. See MAINTAINERS.md.
 
 on:
   schedule:
-    - cron: '0 5 * * *' # daily, 05:00 UTC
+    - cron: '0 5 * * *' # daily 05:00 UTC = 07:00 Amsterdam in summer time (06:00 in winter)
   workflow_dispatch:
 
 permissions:
@@ -27,14 +29,14 @@ jobs:
           READ_TOKEN: ${{ secrets.DANDY_LIONS_READ_TOKEN }}
         run: |
           if [ -z "$READ_TOKEN" ]; then
-            echo "::error::Secret DANDY_LIONS_READ_TOKEN is not set. Add a fine-grained PAT with Contents: Read-only on rbijkercom/dandy-lions (see MAINTAINERS.md)."
+            echo "::error::Secret DANDY_LIONS_READ_TOKEN is not set. Add a fine-grained PAT with Contents: Read-only on rbijkercom/dandy-lions (see MAINTAINERS.md). Nothing was changed."
             exit 1
           fi
 
       - name: Check out the hub
         uses: actions/checkout@v7
 
-      - name: Check out the DandyLions site (read-only)
+      - name: Check out the token stylesheet only (read-only)
         uses: actions/checkout@v7
         with:
           repository: rbijkercom/dandy-lions
@@ -44,35 +46,28 @@ jobs:
           persist-credentials: false
           sparse-checkout: |
             src/app/(frontend)/styles.css
-            docs/design-system.md
           sparse-checkout-cone-mode: false
 
-      - name: Copy token and theme sources
+      - name: Extract tokens
         run: |
           set -euo pipefail
-          mkdir -p design-system/upstream
-          cp ".site-src/src/app/(frontend)/styles.css" design-system/upstream/styles.css
-          cp .site-src/docs/design-system.md design-system/upstream/design-system.md
           SITE_SHA=$(git -C .site-src rev-parse --short HEAD)
           echo "SITE_SHA=$SITE_SHA" >> "$GITHUB_ENV"
+          python3 scripts/extract_css_tokens.py ".site-src/src/app/(frontend)/styles.css"
           rm -rf .site-src
-          python3 scripts/extract_css_tokens.py
 
       - name: Open or update the pull request
         uses: peter-evans/create-pull-request@v8
         with:
           branch: sync/site-tokens
           delete-branch: true
-          add-paths: design-system/upstream/
+          add-paths: design-system/css-tokens.json
           commit-message: "Sync design tokens from dandy-lions@${{ env.SITE_SHA }}"
           title: "Sync design tokens from dandy-lions@${{ env.SITE_SHA }}"
           body: |
-            The token or theme source files in rbijkercom/dandy-lions changed (main @ ${{ env.SITE_SHA }}).
+            The design tokens (CSS custom properties) in rbijkercom/dandy-lions changed (main @ ${{ env.SITE_SHA }}).
 
-            Updated in `design-system/upstream/`:
-            - `styles.css` (from `src/app/(frontend)/styles.css`)
-            - `design-system.md` (from `docs/design-system.md`)
-            - `css-tokens.json` (regenerated)
+            Updated: `design-system/css-tokens.json` (extracted from `src/app/(frontend)/styles.css`; the stylesheet itself is not copied).
 
-            Before merging, check the diff and update `design-system/tokens.json` (and `brand-rules.md` if a rule changed) by hand. Then run `python3 scripts/build_llms.py`.
+            Before merging, check the diff and update `design-system/tokens.json` by hand where needed. Merging publishes the hub.
           labels: sync

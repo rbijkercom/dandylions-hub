@@ -1,0 +1,746 @@
+{
+  "name": "DandyLions hub",
+  "base_url": "https://rbijkercom.github.io/dandylions-hub/",
+  "raw_base_url": "https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/",
+  "updated": "2026-10-08",
+  "tokens": [
+    {
+      "file": "design-system/tokens.json",
+      "title": "Design tokens (curated)",
+      "description": "Colours, themes, typography, spacing, radius, effects and motion. The main file to read."
+    },
+    {
+      "file": "design-system/css-tokens.json",
+      "title": "CSS custom properties (raw snapshot)",
+      "description": "Mechanical snapshot of the website's CSS variables, refreshed by the daily sync from the site repo."
+    }
+  ],
+  "sections": [
+    {
+      "id": "social",
+      "title": "Social post templates (LinkedIn, Instagram)",
+      "page": "templates/",
+      "items": [
+        {
+          "file": "templates/social/linkedin-post-01-insight-quote.png",
+          "title": "LinkedIn post: insight quote",
+          "format_label": "LinkedIn post (square)",
+          "description": "Sage background. Ivory caps overline top left. Large pale serif quote mark, then a three-line serif statement in ivory. Short ivory rule, italic serif support line. Wordmark bottom left, small caps tagline bottom right. Large faint dandelion seed head cropped off the top-right edge, with one drifting seed.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16606 (Social media pack › LI Post 01)"
+        },
+        {
+          "file": "templates/social/linkedin-post-02-service-highlight.png",
+          "title": "LinkedIn post: service highlight",
+          "format_label": "LinkedIn post (square)",
+          "description": "Top half: pale-sage photo placeholder band with a small seed head and a 'photo placeholder' label. Bottom half: ivory panel with gold caps overline, serif title, italic dek, and four numbered steps (01 to 04) in a row separated by thin rules. Wordmark bottom left, small caps link with arrow bottom right.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16624 (Social media pack › LI Post 02)"
+        },
+        {
+          "file": "templates/social/linkedin-post-03-event.png",
+          "title": "LinkedIn post: event",
+          "format_label": "LinkedIn post (square)",
+          "description": "Charcoal background. Caps overline, large serif title in ivory, italic serif sub. Four-row details table (date, time, location, registration) with bracketed placeholders and hairline dividers. Gold seed head bottom right. Wordmark bottom left.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16646 (Social media pack › LI Post 03)"
+        },
+        {
+          "file": "templates/social/linkedin-link-01-article.png",
+          "title": "LinkedIn link image: article",
+          "format_label": "LinkedIn link image",
+          "description": "Split layout. Left 45%: pale-sage photo placeholder with a seed head. Right: ivory panel with gold caps overline, serif title, short sans dek, wordmark bottom left and a caps link bottom right.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16678 (Social media pack › LI Link 01)"
+        },
+        {
+          "file": "templates/social/linkedin-link-02-statement.png",
+          "title": "LinkedIn link image: statement",
+          "format_label": "LinkedIn link image",
+          "description": "Sage background. Caps overline, three-line serif statement in ivory, one small caps line of topics, wordmark bottom left. Faint seed head cropped off the right edge.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16692 (Social media pack › LI Link 02)"
+        },
+        {
+          "file": "templates/social/linkedin-company-banner.png",
+          "title": "LinkedIn company banner",
+          "format_label": "LinkedIn company page banner",
+          "description": "Thin sage strip. Italic serif line in two parts with small caps labels, set right of centre. Faint seed heads. The left third is kept clear for the page logo overlay.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16708 (Social media pack › LI Company banner)"
+        },
+        {
+          "file": "templates/social/linkedin-avatar.png",
+          "title": "LinkedIn avatar",
+          "format_label": "LinkedIn avatar / profile image",
+          "description": "Sage square. Ivory line-art lion symbol centred over a faint large seed head. Shown as a circle on LinkedIn.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16721 (Social media pack › LI Avatar / logo)"
+        },
+        {
+          "file": "templates/social/instagram-post-01-archetype.png",
+          "title": "Instagram post: archetype",
+          "format_label": "Instagram feed post (square)",
+          "description": "Ivory background, centred layout. Gold caps overline between short rules, small gold dandelion icon, centred serif title, three-line centred italic sub, centred wordmark at the bottom. Gold seed head in the bottom-right corner.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16727 (Social media pack › IG Post 01)"
+        },
+        {
+          "file": "templates/social/instagram-post-02-numbers.png",
+          "title": "Instagram post: big numbers",
+          "format_label": "Instagram feed post (square)",
+          "description": "Sage background. Caps overline, very large serif numeral in ivory with a label below, thin rule, then two smaller numerals with labels in two columns. Wordmark bottom left. Faint seed head top right.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16751 (Social media pack › IG Post 02)"
+        },
+        {
+          "file": "templates/social/instagram-post-03-statement.png",
+          "title": "Instagram post: statement",
+          "format_label": "Instagram feed post (square)",
+          "description": "Ivory background. Caps overline, large three-line serif statement in charcoal, italic serif sub. Large gold seed head bottom right with drifting seeds. Wordmark bottom left.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16766 (Social media pack › IG Post 03)"
+        },
+        {
+          "file": "templates/social/instagram-carousel-1-cover.png",
+          "title": "Instagram carousel 1/4: cover",
+          "format_label": "Instagram carousel slide (portrait)",
+          "description": "Sage background. Overline top left, '1/4' top right. Large two-line serif title, italic sub. Horizontal ivory line with three nodes and caps labels at its ends. Seed head bottom right, page dots bottom left.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16788 (Social media pack › IG Carousel 1/4)"
+        },
+        {
+          "file": "templates/social/instagram-carousel-2-content.png",
+          "title": "Instagram carousel 2/4: content",
+          "format_label": "Instagram carousel slide (portrait)",
+          "description": "Ivory background. Caps overline, gold serif number '01', serif heading, straight gold line with three nodes, two sans paragraphs, outlined pill tag with a caps phrase. Page dots and '2/4' at the bottom.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16809 (Social media pack › IG Carousel 2/4)"
+        },
+        {
+          "file": "templates/social/instagram-carousel-3-content.png",
+          "title": "Instagram carousel 3/4: content",
+          "format_label": "Instagram carousel slide (portrait)",
+          "description": "Same layout as slide 2 with '02' and a wavy (emergent) gold line instead of a straight one.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16828 (Social media pack › IG Carousel 3/4)"
+        },
+        {
+          "file": "templates/social/instagram-carousel-4-closing.png",
+          "title": "Instagram carousel 4/4: closing",
+          "format_label": "Instagram carousel slide (portrait)",
+          "description": "Sage background. Overline, five-line serif paragraph in ivory, ivory pill button, wordmark. Large seed head bottom right, page dots at the bottom.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16847 (Social media pack › IG Carousel 4/4)"
+        },
+        {
+          "file": "templates/social/instagram-story-01-steps.png",
+          "title": "Instagram story: three steps",
+          "format_label": "Instagram story (vertical)",
+          "description": "Sage background. Overline, large serif title, italic intro. Three steps on a thin vertical line, each with a small node, caps step label, serif step title and short sans text. Wordmark at the bottom, seed head top right. Text kept between y 250 and y 1580.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16868 (Social media pack › IG Story 01)"
+        },
+        {
+          "file": "templates/social/instagram-story-02-event.png",
+          "title": "Instagram story: event",
+          "format_label": "Instagram story (vertical)",
+          "description": "Top 40%: pale-sage photo placeholder. Ivory lower part: gold caps overline, serif title, three columns of serif format names with italic sublines, a bracketed details line, a dashed rounded rectangle marking where the link sticker goes, centred wordmark.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16897 (Social media pack › IG Story 02)"
+        },
+        {
+          "file": "templates/social/social-pack-spec-sheet.png",
+          "title": "Social pack spec sheet",
+          "format_label": "Spec sheet",
+          "description": "Ivory spec sheet for the pack: sizes and safe zones per format, safe-zone diagrams, font specimens with social-scale sizes, colour pairs with contrast ratios, and the graphic devices (seed head, drifting seeds, gold rule, linear vs emergent line, photo placeholders).",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16924 (Social media pack › Pack guide)"
+        }
+      ]
+    },
+    {
+      "id": "slides",
+      "title": "Presentation templates (PowerPoint master layouts, 16:9)",
+      "page": "templates/",
+      "note": "Header: caps section label left, 'NN / 13' right. Footer above a hairline: small 'DandyLions · NN' left, presentation title right. Content area x 120, y 168, 1680 x 721.",
+      "items": [
+        {
+          "file": "templates/slides/slide-01-title-sage.png",
+          "title": "Slide 01: title (sage)",
+          "format_label": "Presentation slide 16:9",
+          "description": "Sage background. Bracketed caps overline, large serif title in ivory, italic subtitle, presenter line. Ivory lion lockup on the right.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16042 (Presentation kit › 01 — Title slide · Sage)"
+        },
+        {
+          "file": "templates/slides/slide-01b-title-light.png",
+          "title": "Slide 01b: title (light)",
+          "format_label": "Presentation slide 16:9",
+          "description": "Ivory version of the title slide with charcoal text and the charcoal lion lockup on the right.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16057 (Presentation kit › 01b — Title slide · Light)"
+        },
+        {
+          "file": "templates/slides/slide-02-section-divider-sage.png",
+          "title": "Slide 02: section divider (sage)",
+          "format_label": "Presentation slide 16:9",
+          "description": "Sage background. Large serif section number, serif section title and italic one-line intro in the lower left.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16072 (Presentation kit › 02 — Section divider · Sage)"
+        },
+        {
+          "file": "templates/slides/slide-02b-section-divider-light.png",
+          "title": "Slide 02b: section divider (light)",
+          "format_label": "Presentation slide 16:9",
+          "description": "Ivory version of the section divider.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16084 (Presentation kit › 02b — Section divider · Light)"
+        },
+        {
+          "file": "templates/slides/slide-03-title-text-light.png",
+          "title": "Slide 03: title and text",
+          "format_label": "Presentation slide 16:9",
+          "description": "Ivory. Serif title and italic subtitle in the left column; body text and three check-mark bullets in the right column.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16096 (Presentation kit › 03 — Title + text · Light)"
+        },
+        {
+          "file": "templates/slides/slide-04-two-columns-light.png",
+          "title": "Slide 04: two columns",
+          "format_label": "Presentation slide 16:9",
+          "description": "Ivory. Serif title on top; two equal columns, each with a serif heading, a short sans paragraph and check-mark bullets.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16119 (Presentation kit › 04 — Two columns · Light)"
+        },
+        {
+          "file": "templates/slides/slide-05-image-text-light.png",
+          "title": "Slide 05: image and text (light)",
+          "format_label": "Presentation slide 16:9",
+          "description": "Ivory. Photo with rounded corners on the left (a facilitator at a whiteboard in a meeting room); caps label, serif title, body text and bullets on the right.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16148 (Presentation kit › 05 — Image + text · Light)"
+        },
+        {
+          "file": "templates/slides/slide-05b-image-text-sage.png",
+          "title": "Slide 05b: image and text (sage)",
+          "format_label": "Presentation slide 16:9",
+          "description": "Sage version of the image and text slide, ivory text.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16168 (Presentation kit › 05b — Image + text · Sage)"
+        },
+        {
+          "file": "templates/slides/slide-06-full-bleed-photo.png",
+          "title": "Slide 06: full-bleed photo",
+          "format_label": "Presentation slide 16:9",
+          "description": "Full-bleed photo (weaving loom with teal yarn in warm light) with a dark gradient at the lower left carrying a caps label, a serif statement and a small caption in ivory.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16188 (Presentation kit › 06 — Full-bleed photo)"
+        },
+        {
+          "file": "templates/slides/slide-07-quote-sage.png",
+          "title": "Slide 07: quote (sage)",
+          "format_label": "Presentation slide 16:9",
+          "description": "Sage background. Two-line serif quotation in ivory with a small caps attribution line below.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16201 (Presentation kit › 07 — Quote · Sage)"
+        },
+        {
+          "file": "templates/slides/slide-07b-quote-light.png",
+          "title": "Slide 07b: quote (light)",
+          "format_label": "Presentation slide 16:9",
+          "description": "Ivory version of the quote slide; attribution in gold caps.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16212 (Presentation kit › 07b — Quote · Light)"
+        },
+        {
+          "file": "templates/slides/slide-08-big-numbers-light.png",
+          "title": "Slide 08: big numbers",
+          "format_label": "Presentation slide 16:9",
+          "description": "Ivory. Serif title; three columns, each with a large gold serif numeral and a short sans label, separated by hairlines.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16223 (Presentation kit › 08 — Big numbers · Light)"
+        },
+        {
+          "file": "templates/slides/slide-09-agenda-light.png",
+          "title": "Slide 09: agenda",
+          "format_label": "Presentation slide 16:9",
+          "description": "Ivory. Serif title and italic event line on the left; five numbered rows on the right with gold serif numbers, bracketed items and right-aligned times, separated by hairlines.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16243 (Presentation kit › 09 — Agenda · Light)"
+        },
+        {
+          "file": "templates/slides/powerpoint-setup-spec-sheet.png",
+          "title": "PowerPoint master spec sheet",
+          "format_label": "Spec sheet",
+          "description": "Wide ivory spec sheet: theme colour slots with swatches and hex values, heading and body font settings, and the measurements for rebuilding layouts 01 to 10 as a PowerPoint slide master (16:9).",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16292 (Presentation kit › How to set up in PowerPoint)"
+        }
+      ]
+    },
+    {
+      "id": "email",
+      "title": "Email newsletter template",
+      "page": "templates/",
+      "items": [
+        {
+          "file": "templates/email/newsletter-desktop-600.png",
+          "title": "Newsletter: desktop (600 px)",
+          "format_label": "Email (Brevo)",
+          "description": "Single-column email. Logo header (wordmark and caps tagline), full-width hero photo, gold caps kicker, serif heading, sans paragraph, pill button, divider, two rows with image left and text right, then a sage call-to-action band with centred serif heading, text and an ivory pill button. The footer was cropped out of this image because it carries company registration numbers.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16977 (Newletter › Newsletter — desktop (600))"
+        },
+        {
+          "file": "templates/email/newsletter-mobile-375.png",
+          "title": "Newsletter: mobile (375 px)",
+          "format_label": "Email (Brevo)",
+          "description": "The same newsletter stacked for mobile: image rows become image above text. Footer cropped out for the same reason.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:17020 (Newletter › Newsletter — mobile (375))"
+        }
+      ]
+    },
+    {
+      "id": "brand-guide",
+      "title": "Brand identity guide pages (visual reference)",
+      "page": "templates/",
+      "items": [
+        {
+          "file": "templates/brand-guide/brand-guide-01-cover.png",
+          "title": "Brand guide 01: cover",
+          "format_label": "Guide page 16:9",
+          "description": "Sage cover slide with the centred ivory lion lockup, large serif title and caps tagline.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 329:8891 (Brand identity style guide › 01 — Cover · Sage)"
+        },
+        {
+          "file": "templates/brand-guide/brand-guide-03-logo-formats.png",
+          "title": "Brand guide 03: logo formats",
+          "format_label": "Guide page 16:9",
+          "description": "Two panels, ivory and sage, each showing the full lockup, the symbol and the wordmark.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 329:14411 (Brand identity style guide › 03 — Logo formats · Light)"
+        },
+        {
+          "file": "templates/brand-guide/brand-guide-04-logo-clear-space.png",
+          "title": "Brand guide 04: clear space and minimum size",
+          "format_label": "Guide page 16:9",
+          "description": "Lockup with gold corner markers showing the clear space (x = one wordmark cap height). Minimum widths: full lockup 180 px, symbol 80 px, wordmark 120 px.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 329:14583 (Brand identity style guide › 04 — Logo clear space & minimum size · Light)"
+        },
+        {
+          "file": "templates/brand-guide/brand-guide-05-colour-palette.png",
+          "title": "Brand guide 05: colour palette",
+          "format_label": "Guide page 16:9",
+          "description": "Core palette swatches (ivory, sage, sage original, charcoal, gold, gold deep, pale sage) and support palette (control fill, control border, card surface, card border, body ink, selected sand, error) with hex and RGB values.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 329:14722 (Brand identity style guide › 05 — Colour palette · Light)"
+        },
+        {
+          "file": "templates/brand-guide/brand-guide-06-themes-accents.png",
+          "title": "Brand guide 06: themes and accents",
+          "format_label": "Guide page 16:9",
+          "description": "Light (ivory) and Inverted (sage) theme cards with the lockup and a button, plus the four accent badge colours: sage muted, wine, ochre, forest.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 329:14819 (Brand identity style guide › 06 — Themes & accents · Light)"
+        },
+        {
+          "file": "templates/brand-guide/brand-guide-07-typography.png",
+          "title": "Brand guide 07: typography",
+          "format_label": "Guide page 16:9",
+          "description": "Specimens of Cormorant Garamond and Hanken Grotesk with fallbacks, and the type scale with size and line height per style.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 329:15001 (Brand identity style guide › 07 — Typography · Light)"
+        },
+        {
+          "file": "templates/brand-guide/brand-guide-08-photography.png",
+          "title": "Brand guide 08: photography",
+          "format_label": "Guide page 16:9",
+          "description": "Grid of six photos from the live site: on stage, in the field at sunset, a weaving loom, hands with dough, chess pieces, a compass and notebook. Shows the warm, natural photo style.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 329:15049 (Brand identity style guide › 08 — Photography · Light)"
+        },
+        {
+          "file": "templates/brand-guide/brand-guide-09-iconography.png",
+          "title": "Brand guide 09: iconography",
+          "format_label": "Guide page 16:9",
+          "description": "Grid of 21 thin line icons from the design system at 64 px, each on a card with its name.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 329:15077 (Brand identity style guide › 09 — Iconography · Light)"
+        },
+        {
+          "file": "templates/brand-guide/brand-guide-10-graphic-elements.png",
+          "title": "Brand guide 10: graphic elements",
+          "format_label": "Guide page 16:9",
+          "description": "Paper grain on ivory and on sage, the lion motif (charcoal on ivory, ivory on sage), a banner with banner items, and number and icon badges.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 329:15212 (Brand identity style guide › 10 — Graphic elements · Light)"
+        },
+        {
+          "file": "templates/brand-guide/brand-guide-11-ui-elements.png",
+          "title": "Brand guide 11: UI elements",
+          "format_label": "Guide page 16:9",
+          "description": "Buttons, pills and tabs in the Light and Inverted themes, plus route card, feature card and quote card.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 329:15277 (Brand identity style guide › 11 — UI elements · Light)"
+        }
+      ]
+    },
+    {
+      "id": "logos",
+      "title": "Logos",
+      "page": "assets/",
+      "items": [
+        {
+          "file": "assets/logos/lockup-charcoal.svg",
+          "title": "Full lockup, charcoal",
+          "description": "Lion symbol above the DandyLions wordmark and the REFLECTION IN MOTION tagline. Charcoal #2D2D2D.",
+          "background": "Ivory or light backgrounds",
+          "use": "Primary logo. Minimum width 180 px.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 330:9762 (Brand identity style guide › 03 Logo formats › Light · Ivory › Lockup); vector paths extracted from the Figma SVG export, background frames removed"
+        },
+        {
+          "file": "assets/logos/lockup-ivory.svg",
+          "title": "Full lockup, ivory",
+          "description": "Same lockup in ivory #F5F2EC.",
+          "background": "Sage or dark backgrounds",
+          "use": "Inverted logo. Minimum width 180 px.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 330:9844 (Brand identity style guide › 03 Logo formats › Inverted · Sage › Lockup); vector paths extracted from the Figma SVG export, background frames removed"
+        },
+        {
+          "file": "assets/logos/lockup-charcoal@4x.png",
+          "title": "Full lockup, charcoal (PNG)",
+          "description": "Raster of the charcoal lockup on a solid ivory #F5F2EC background (800 x 1177).",
+          "background": "Ivory backgrounds (background is baked in)",
+          "use": "Where SVG is not accepted (PowerPoint, social tools).",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 330:9762 (PNG export at 4x)"
+        },
+        {
+          "file": "assets/logos/lockup-ivory@4x.png",
+          "title": "Full lockup, ivory (PNG)",
+          "description": "Raster of the ivory lockup on a solid sage #748262 background (800 x 1177).",
+          "background": "Sage backgrounds (background is baked in)",
+          "use": "Where SVG is not accepted.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 330:9844 (PNG export at 4x)"
+        },
+        {
+          "file": "assets/logos/symbol-lion-charcoal.svg",
+          "title": "Lion symbol, charcoal",
+          "description": "Line-art lion head with dandelion seeds drifting from the mane, charcoal #2D2D2D.",
+          "background": "Ivory or light backgrounds",
+          "use": "Symbol on its own (avatars, slide corners). Minimum width 80 px.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 330:9762 (lion artwork group from the lockup export)"
+        },
+        {
+          "file": "assets/logos/symbol-lion-ivory.svg",
+          "title": "Lion symbol, ivory",
+          "description": "Same symbol in ivory #F5F2EC.",
+          "background": "Sage or dark backgrounds",
+          "use": "Inverted symbol. Minimum width 80 px.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 330:9844 (lion artwork group from the lockup export)"
+        },
+        {
+          "file": "assets/logos/wordmark-charcoal.svg",
+          "title": "Wordmark, charcoal",
+          "description": "'DandyLions' in Cormorant Garamond Light, outlined, charcoal #2D2D2D.",
+          "background": "Ivory or light backgrounds",
+          "use": "Wordmark on its own (footers, slide headers). Minimum width 120 px.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 330:9836 (Brand identity style guide › 03 Logo formats › Light · Ivory › Wordmark); outlined text path extracted"
+        },
+        {
+          "file": "assets/logos/wordmark-ivory.svg",
+          "title": "Wordmark, ivory",
+          "description": "Same wordmark in ivory #F5F2EC.",
+          "background": "Sage or dark backgrounds",
+          "use": "Inverted wordmark.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 330:9918 (Brand identity style guide › 03 Logo formats › Inverted · Sage › Wordmark); outlined text path extracted"
+        },
+        {
+          "file": "assets/logos/logo-symbol-site.svg",
+          "title": "Website logo symbol",
+          "description": "The compact lion symbol the website uses, charcoal #2D2D2D. The site recolours it with a CSS mask (charcoal on ivory, ivory on sage).",
+          "background": "Ivory (as is); any background when recoloured",
+          "use": "Small sizes, header logo.",
+          "source": "rbijkercom/dandy-lions: public/brand/logo-symbol.svg (copied unchanged)"
+        },
+        {
+          "file": "assets/logos/lion-artwork-original.svg",
+          "title": "Original lion artwork",
+          "description": "The original high-detail lion line art, charcoal #2B2B2B, 945 x 945 viewBox.",
+          "background": "Ivory or light backgrounds",
+          "use": "Large decorative use, print.",
+          "source": "rbijkercom/dandy-lions: reference/logo.svg (copied unchanged)"
+        },
+        {
+          "file": "assets/logos/lion-charcoal.png",
+          "title": "Lion artwork, charcoal (PNG)",
+          "description": "Raster of the original lion art in charcoal on transparent.",
+          "background": "Ivory or light backgrounds",
+          "use": "Large decorative use where SVG is not accepted.",
+          "source": "rbijkercom/dandy-lions: reference/media/lion-charcoal.png"
+        },
+        {
+          "file": "assets/logos/lion-ivory.png",
+          "title": "Lion artwork, ivory (PNG)",
+          "description": "Raster of the original lion art in ivory on transparent.",
+          "background": "Sage or dark backgrounds",
+          "use": "Large decorative use where SVG is not accepted.",
+          "source": "rbijkercom/dandy-lions: reference/media/lion-ivory.png"
+        },
+        {
+          "file": "assets/logos/mark-button-charcoal.png",
+          "title": "Logo mark button, charcoal",
+          "description": "Small charcoal lion mark on transparent, as used for the site's mark button.",
+          "background": "Ivory or light backgrounds",
+          "use": "App-icon style mark, small sizes.",
+          "source": "rbijkercom/dandy-lions: reference/media/mark-button-a.png"
+        },
+        {
+          "file": "assets/logos/mark-button-ivory.png",
+          "title": "Logo mark button, ivory",
+          "description": "Small ivory lion mark on transparent.",
+          "background": "Sage or dark backgrounds",
+          "use": "App-icon style mark, small sizes.",
+          "source": "rbijkercom/dandy-lions: reference/media/mark-button-b.png"
+        },
+        {
+          "file": "assets/logos/favicon.ico",
+          "title": "Favicon",
+          "description": "The site favicon (lion), 32 x 32.",
+          "background": "Browser tab",
+          "use": "Favicon.",
+          "source": "rbijkercom/dandy-lions: public/favicon.ico"
+        }
+      ]
+    },
+    {
+      "id": "icons",
+      "title": "Icons (design-system icon set)",
+      "page": "assets/",
+      "note": "Line icons. Strokes and fills use currentColor; the root sets color=\"#2D2D2D\" (charcoal). On sage, use ivory #F5F2EC. Accent badge colours: sage muted #7C866D, wine #632631, ochre #AA8653, forest #183930.",
+      "items": [
+        {
+          "file": "assets/icons/alert.svg",
+          "title": "Alert / error (circle with exclamation mark)",
+          "description": "Alert / error (circle with exclamation mark)",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/archetype-dandelion.svg",
+          "title": "Archetype: dandelion",
+          "description": "Archetype: dandelion",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/archetype-dandy.svg",
+          "title": "Archetype: dandy",
+          "description": "Archetype: dandy",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/archetype-lion.svg",
+          "title": "Archetype: lion (sun-like face)",
+          "description": "Archetype: lion (sun-like face)",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/arrow-up-right.svg",
+          "title": "Arrow up-right (open, external link)",
+          "description": "Arrow up-right (open, external link)",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/check.svg",
+          "title": "Check mark (bullets, success)",
+          "description": "Check mark (bullets, success)",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/chevron-down.svg",
+          "title": "Chevron down",
+          "description": "Chevron down",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/chevron-left.svg",
+          "title": "Chevron left",
+          "description": "Chevron left",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/chevron-right.svg",
+          "title": "Chevron right",
+          "description": "Chevron right",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/chevron-up.svg",
+          "title": "Chevron up",
+          "description": "Chevron up",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/close.svg",
+          "title": "Close (X)",
+          "description": "Close (X)",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/compass.svg",
+          "title": "Compass (diamond in circle)",
+          "description": "Compass (diamond in circle)",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/dandelion-artwork.svg",
+          "title": "Dandelion artwork (small)",
+          "description": "Dandelion artwork (small)",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/eye.svg",
+          "title": "Eye: vision",
+          "description": "Eye: vision",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/instagram.svg",
+          "title": "Instagram",
+          "description": "Instagram",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/linkedin.svg",
+          "title": "LinkedIn",
+          "description": "LinkedIn",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/lion-artwork.svg",
+          "title": "Lion artwork (small line icon)",
+          "description": "Lion artwork (small line icon)",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/mail.svg",
+          "title": "Mail / envelope",
+          "description": "Mail / envelope",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/map-pin.svg",
+          "title": "Map pin / location",
+          "description": "Map pin / location",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/menu.svg",
+          "title": "Menu (three lines)",
+          "description": "Menu (three lines)",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/minus.svg",
+          "title": "Minus",
+          "description": "Minus",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/mission-compass.svg",
+          "title": "Compass: mission",
+          "description": "Compass: mission",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/plus.svg",
+          "title": "Plus",
+          "description": "Plus",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/sprout.svg",
+          "title": "Sprout: legacy",
+          "description": "Sprout: legacy",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        },
+        {
+          "file": "assets/icons/trend-up.svg",
+          "title": "Trend up: ambition",
+          "description": "Trend up: ambition",
+          "background": "Any; recolour via the color attribute",
+          "use": "UI and layout icons",
+          "source": "rbijkercom/dandy-lions: src/components/ui/Icon.tsx (glyph converted to a standalone SVG: JSX attributes renamed to SVG attributes, root colour set to charcoal #2D2D2D; strokes and fills use currentColor)"
+        }
+      ]
+    },
+    {
+      "id": "graphics",
+      "title": "Graphic devices and textures",
+      "page": "assets/",
+      "items": [
+        {
+          "file": "assets/svg/seed-head.svg",
+          "title": "Dandelion seed head",
+          "description": "Gold #907948 line drawing of a dandelion seed head at 60% opacity.",
+          "background": "Ivory or sage",
+          "use": "Graphic device: large, cropped off an edge, 20 to 60% opacity.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16767 (Social media pack › IG Post 03 › Seed head)"
+        },
+        {
+          "file": "assets/svg/drifting-seed.svg",
+          "title": "Drifting seed",
+          "description": "Single gold #907948 dandelion seed at 60% opacity.",
+          "background": "Ivory or sage",
+          "use": "Graphic device: 2 to 4 per layout, rising away from the seed head.",
+          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 372:16770 (Social media pack › IG Post 03 › Drifting seed)"
+        },
+        {
+          "file": "assets/graphics/paper-grain.png",
+          "title": "Paper grain texture",
+          "description": "Seamless paper-grain noise tile (300 x 300).",
+          "background": "Overlay on ivory and sage at about 3.5% opacity",
+          "use": "Background texture.",
+          "source": "rbijkercom/dandy-lions: public/brand/grain.png"
+        }
+      ]
+    }
+  ],
+  "placeholders": [
+    {
+      "title": "Closing / contact slide (Presentation kit layout 10)",
+      "note": "It exists in Figma (node 372:16276) but shows company registration and VAT numbers and a personal email address, so it is left out. [TO BE SUPPLIED BY RUBEN: a closing slide without registration numbers or personal contact details]"
+    },
+    {
+      "title": "PowerPoint template file (.potx)",
+      "note": "Only the Figma layouts exist; no .potx file was found. [TO BE SUPPLIED BY RUBEN: the .potx master once built]"
+    },
+    {
+      "title": "Stationery (letterhead, invoice, quote, business cards, email signature, compliments slip, envelope)",
+      "note": "They exist in Figma (Stationery kit, node 372:16353) but carry an address, phone number and personal email, so they are left out. [TO BE SUPPLIED BY RUBEN: cleared stationery images, if they should be here]"
+    },
+    {
+      "title": "Speaker kit (A4 PDF pages, speaker page)",
+      "note": "It exists in Figma (node 372:15781) but includes a personal email address, so it is left out. [TO BE SUPPLIED BY RUBEN: cleared speaker kit images, if they should be here]"
+    },
+    {
+      "title": "Newsletter footer",
+      "note": "Cropped out of the newsletter images because it shows company registration and VAT numbers. [TO BE SUPPLIED BY RUBEN: a footer version without them, if needed]"
+    },
+    {
+      "title": "Video / reel covers and animated formats",
+      "note": "None found in Figma or the site repo. [TO BE SUPPLIED BY RUBEN: if wanted]"
+    },
+    {
+      "title": "Horizontal (side-by-side) logo lockup",
+      "note": "None found; only the stacked lockup, symbol and wordmark exist. [TO BE SUPPLIED BY RUBEN: if wanted]"
+    }
+  ]
+}
