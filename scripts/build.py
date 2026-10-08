@@ -160,7 +160,7 @@ ds = f"""<h1>Design tokens</h1>
 <h2>Colour primitives</h2><table><tr><th></th><th>Name</th><th>Hex</th><th>Role</th></tr>{''.join(rows)}</table>
 <p class="meta">Themes, accents and semantic colours: see <code>color</code> and <code>themes</code> in tokens.json.</p>
 <h2>Type families</h2><table><tr><th></th><th>Family</th><th>Weights</th><th>Use</th><th>Fallback</th></tr>{typ}</table>
-<h2>Type scale</h2><table><tr><th>Style</th><th>Family</th><th>Weight</th><th>Size</th><th>Line height</th><th>Tracking</th></tr>{scale}</table>
+<h2>Type scale</h2><p>{esc(TOKENS["typography"].get("scaleNote", ""))}</p><table><tr><th>Style</th><th>Family</th><th>Weight</th><th>Size</th><th>Line height</th><th>Tracking</th></tr>{scale}</table>
 <h2>Spacing, radius, effects</h2><pre><code>{esc(json.dumps({k: TOKENS[k] for k in ('spacing','radius','effects','motion')}, indent=2, ensure_ascii=False))}</code></pre>"""
 (ROOT / "design-system" / "index.html").write_text(page("Design tokens · DandyLions hub", ds, 1), encoding="utf-8")
 
@@ -168,6 +168,7 @@ INSTR = f"""You have read-only access to the DandyLions hub, a public website wi
 
 1. At the start of a task, fetch {BASE}llms-full.txt. It lists the design tokens and every image and asset with its absolute URL, format, size and a visual description.
 2. For colours, fonts, sizes and spacing, use {BASE}design-system/tokens.json.
+   Type scale: 28 and up gets a mobile size, everything else doesn't, and only the wordmark and reading text scale smoothly.
 3. For a social post, slide, newsletter or other visual, the matching template images are a good source of inspiration. Open them by URL and borrow from their layout, colour, type and graphic devices, treating them as reference rather than something to copy exactly.
 4. For logos and icons, use the files listed under Logos and Icons. SVGs are plain text: fetch the raw.githubusercontent.com URL to read the markup. Use the charcoal versions on ivory and the ivory versions on sage.
 5. Where possible, use the real DandyLions logos, icons and graphics from the hub; they're the best starting point. If something you need isn't there, it helps to mention it, since Ruben looks after the hub and can add it.
