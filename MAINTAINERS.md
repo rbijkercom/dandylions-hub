@@ -44,4 +44,4 @@ The site repo is private, so the workflow needs a read token:
 
 Without the secret the sync job stops with a clear error and changes nothing.
 
-The workflow opens pull requests with the built-in `GITHUB_TOKEN`. Under Settings → Actions → General → Workflow permissions, tick "Allow GitHub Actions to create and approve pull requests".
+The workflow opens pull requests with the built-in `GITHUB_TOKEN`. For that, Settings → Actions → General → Workflow permissions has "Allow GitHub Actions to create and approve pull requests" switched on (already set when the hub was created).

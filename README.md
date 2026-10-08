@@ -1,3 +1,7 @@
+---
+permalink: /
+---
+
 # DandyLions hub
 
 The single source of truth for **DandyLions** (founder: Fabio Bortolazzi) for writing social content with Claude: the design system, the voice, and all published source material.

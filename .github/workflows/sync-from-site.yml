@@ -32,10 +32,10 @@ jobs:
           fi
 
       - name: Check out the hub
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Check out the DandyLions site (read-only)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: rbijkercom/dandy-lions
           ref: main
@@ -59,7 +59,7 @@ jobs:
           python3 scripts/extract_css_tokens.py
 
       - name: Open or update the pull request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: sync/site-tokens
           delete-branch: true

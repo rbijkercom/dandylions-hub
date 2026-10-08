@@ -6,7 +6,7 @@ Everything in one file: https://rbijkercom.github.io/dandylions-hub/llms-full.tx
 
 ## Start here
 
-- [README.md](https://rbijkercom.github.io/dandylions-hub/README.html): What the hub is and its rules
+- [README.md](https://rbijkercom.github.io/dandylions-hub/): What the hub is and its rules
 - [project-instructions.md](https://rbijkercom.github.io/dandylions-hub/project-instructions.html): Instructions for Claude: sources, voice, LinkedIn and Instagram, output format
 
 ## Voice
@@ -22,7 +22,7 @@ Everything in one file: https://rbijkercom.github.io/dandylions-hub/llms-full.tx
 
 ## Sources
 
-- [sources/README.md](https://rbijkercom.github.io/dandylions-hub/sources/README.html): What each source holds and its status; placeholder rules
+- [sources/README.md](https://rbijkercom.github.io/dandylions-hub/sources/): What each source holds and its status; placeholder rules
 - [sources/about.md](https://rbijkercom.github.io/dandylions-hub/sources/about.html): Fabio, archetypes, vision and mission, track record, testimonials, contact
 - [sources/offerings/insights.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/insights.html): Insights (Clarity): formats and newsletter
 - [sources/offerings/educational-events.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/educational-events.html): Educational Events: five topics
@@ -33,7 +33,7 @@ Everything in one file: https://rbijkercom.github.io/dandylions-hub/llms-full.tx
 - [sources/offerings/the-story-beneath.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/the-story-beneath.html): The Story Beneath
 - [sources/offerings/pattern-weaver-approach.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/pattern-weaver-approach.html): Pattern Weaver Approach: technical vs adaptive, four loyalties
 - [sources/articles.md](https://rbijkercom.github.io/dandylions-hub/sources/articles.html): Field notes: titles and deks
-- [sources/linkedin/README.md](https://rbijkercom.github.io/dandylions-hub/sources/linkedin/README.html): How to write LinkedIn posts
+- [sources/linkedin/README.md](https://rbijkercom.github.io/dandylions-hub/sources/linkedin/): How to write LinkedIn posts
 - [sources/linkedin/post-template.md](https://rbijkercom.github.io/dandylions-hub/sources/linkedin/post-template.html): LinkedIn draft template
-- [sources/instagram/README.md](https://rbijkercom.github.io/dandylions-hub/sources/instagram/README.html): How to write Instagram posts
+- [sources/instagram/README.md](https://rbijkercom.github.io/dandylions-hub/sources/instagram/): How to write Instagram posts
 - [sources/instagram/post-template.md](https://rbijkercom.github.io/dandylions-hub/sources/instagram/post-template.html): Instagram draft template

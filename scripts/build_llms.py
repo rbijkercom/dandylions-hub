@@ -5,6 +5,7 @@ Run from anywhere: python3 scripts/build_llms.py
 Both files are written to the repository root and served by GitHub Pages.
 """
 import pathlib
+import re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 BASE = "https://rbijkercom.github.io/dandylions-hub"
@@ -45,6 +46,10 @@ SECTIONS = {
 
 
 def page_url(path: str) -> str:
+    if path == "README.md":
+        return f"{BASE}/"
+    if path.endswith("/README.md"):
+        return f"{BASE}/{path[: -len('README.md')]}"
     if path.endswith(".md"):
         return f"{BASE}/{path[:-3]}.html"
     return f"{BASE}/{path}"
@@ -70,7 +75,8 @@ def main() -> None:
         index += [f"## {section}", ""]
         for path, desc in files:
             index.append(f"- [{path}]({page_url(path)}): {desc}")
-            text = (ROOT / path).read_text(encoding="utf-8").strip()
+            text = (ROOT / path).read_text(encoding="utf-8")
+            text = re.sub(r"\A---\n.*?\n---\n", "", text, flags=re.S).strip()
             full += [f"===== FILE: {path} =====", "", text, ""]
         index.append("")
     (ROOT / "llms.txt").write_text("\n".join(index).rstrip() + "\n", encoding="utf-8")
