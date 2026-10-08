@@ -168,9 +168,9 @@ INSTR = f"""You have read-only access to the DandyLions hub, a public website wi
 
 1. At the start of a task, fetch {BASE}llms-full.txt. It lists the design tokens and every image and asset with its absolute URL, format, size and a visual description.
 2. For colours, fonts, sizes and spacing, use {BASE}design-system/tokens.json.
-3. When you make a social post, slide, newsletter or other visual, open the matching template images by URL and follow their layout, colours, type and graphic devices.
+3. For a social post, slide, newsletter or other visual, the matching template images are a good source of inspiration. Open them by URL and borrow from their layout, colour, type and graphic devices, treating them as reference rather than something to copy exactly.
 4. For logos and icons, use the files listed under Logos and Icons. SVGs are plain text: fetch the raw.githubusercontent.com URL to read the markup. Use the charcoal versions on ivory and the ivory versions on sage.
-5. Never invent logos, icons or template designs. If something is missing, say so; Ruben Bijker maintains the hub.
+5. Where possible, use the real DandyLions logos, icons and graphics from the hub; they're the best starting point. If something you need isn't there, it helps to mention it, since Ruben looks after the hub and can add it.
 6. The hub contains no copywriting guidance. The text inside the template images is sample text only."""
 
 pi = f"""<h1>Set up a Claude Project for the DandyLions hub</h1>
