@@ -128,10 +128,6 @@ URL: https://rbijkercom.github.io/dandylions-hub/design-system/tokens.json
       }
     },
     "retired": {
-      "sage-original": {
-        "hex": "#7F8D6C",
-        "note": "Reference only. Previous sage. Do not use."
-      },
       "sage-deep": {
         "hex": "#646F55",
         "note": "Does not exist in the system. Inverted surfaces are sage #748262."
@@ -151,12 +147,12 @@ URL: https://rbijkercom.github.io/dandylions-hub/design-system/tokens.json
       {
         "pair": "sage + ivory",
         "ratio": "3.68:1",
-        "use": "Large text only (24 px and up)"
+        "use": "Best for large text, 24 px and up"
       },
       {
         "pair": "charcoal + ivory",
         "ratio": "12.3:1",
-        "use": "Gold only for rules and seeds on charcoal"
+        "use": "Gold works best for rules and seeds on charcoal"
       }
     ]
   },
@@ -954,7 +950,7 @@ Header: caps section label left, 'NN / 13' right. Footer above a hairline: small
 ### Brand guide 05: colour palette
 - URL: https://rbijkercom.github.io/dandylions-hub/templates/brand-guide/brand-guide-05-colour-palette.png
 - Format: PNG, 1920 x 1080 px (Guide page 16:9)
-- Looks like: Core palette swatches (ivory, sage, sage original, charcoal, gold, gold deep, pale sage) and support palette (control fill, control border, card surface, card border, body ink, selected sand, error) with hex and RGB values.
+- Looks like: Core palette swatches (ivory, sage, charcoal, gold, gold deep, pale sage) and support palette (control fill, control border, card surface, card border, body ink, selected sand, error) with hex and RGB values.
 - Source: Figma file ADAT7igJnBG5nvij5shy9V, node 329:14722 (Brand identity style guide › 05 — Colour palette · Light)
 
 ### Brand guide 06: themes and accents

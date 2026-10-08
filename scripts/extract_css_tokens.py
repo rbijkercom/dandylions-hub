@@ -24,6 +24,13 @@ BLOCKS = {
     "layout_base": r"\n:root\s*\{(\s*--page-margin.*?)\n\}",
 }
 DECL = re.compile(r"(--[\w-]+)\s*:\s*([^;]+);")
+# Retired tokens that must never come back into the hub, even if the site
+# stylesheet still defines them.
+EXCLUDE = re.compile(r"^--color-sage-(original|old|previous|legacy)$")
+
+
+def decls(block: str) -> dict:
+    return {k: v for k, v in DECL.findall(block) if not EXCLUDE.match(k)}
 
 
 def main() -> None:
@@ -33,7 +40,7 @@ def main() -> None:
     out = {"source": "rbijkercom/dandy-lions: src/app/(frontend)/styles.css"}
     for name, pattern in BLOCKS.items():
         match = re.search(pattern, css, re.S)
-        out[name] = dict(DECL.findall(match.group(1))) if match else {}
+        out[name] = decls(match.group(1)) if match else {}
     utilities = {}
     for util, body in re.findall(r"@utility\s+(type-[\w-]+)\s*\{(.*?)\}", css, re.S):
         utilities[util] = {k.strip(): v.strip() for k, v in re.findall(r"([\w-]+)\s*:\s*([^;]+);", body)}
