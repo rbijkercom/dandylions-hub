@@ -1,0 +1,1289 @@
+# DandyLions hub: full content
+
+Source: https://rbijkercom.github.io/dandylions-hub/ . This file concatenates every hub file. Each file starts with a line '===== FILE: <path> ====='. Cite those paths as sources.
+Read-only reference maintained by Ruben Bijker. Never invent facts, figures, events or quotes. Gaps are marked [TO BE SUPPLIED BY RUBEN: ...].
+
+===== FILE: README.md =====
+
+# DandyLions hub
+
+The single source of truth for **DandyLions** (founder: Fabio Bortolazzi) for writing social content with Claude: the design system, the voice, and all published source material.
+
+**For Claude:** fetch [llms-full.txt](https://rbijkercom.github.io/dandylions-hub/llms-full.txt) at the start of each chat. It holds every file in this hub as one plain-text document. [llms.txt](https://rbijkercom.github.io/dandylions-hub/llms.txt) is the short index.
+
+- Website: https://dandy-lions.vercel.app (EN / IT / NL)
+- Tagline: REFLECTION IN MOTION
+- Insights = *Clarity* (light, ivory). Consulting = *Impact* (inverted, sage).
+
+## What's here
+
+| Folder | Contents |
+| --- | --- |
+| [design-system/](design-system/brand-rules.md) | [tokens.json](design-system/tokens.json) (colours, type, spacing, grain, themes), [brand-rules.md](design-system/brand-rules.md), [social-formats.md](design-system/social-formats.md) |
+| [voice/](voice/voice-and-tone.md) | [voice-and-tone.md](voice/voice-and-tone.md), [multilingual-glossary.md](voice/multilingual-glossary.md) |
+| [sources/](sources/README.md) | About, offerings, articles, and LinkedIn / Instagram guides and templates |
+| [project-instructions.md](project-instructions.md) | Ready-to-paste instructions for a Claude Project |
+| [INDEX.md](INDEX.md) | Every file, one line each |
+
+## Rules
+
+1. This hub is **read-only reference**. Ruben Bijker maintains it; see [MAINTAINERS.md](MAINTAINERS.md).
+2. Brand, voice and facts come only from here. Nothing is invented: no facts, figures, clients, events or quotes.
+3. Gaps are marked **[TO BE SUPPLIED BY RUBEN: ...]**. They stay gaps until Ruben fills them.
+
+## Keeping in sync with the site
+
+A daily GitHub Action copies the design tokens from the DandyLions site repository and opens a pull request when they change. See [MAINTAINERS.md](MAINTAINERS.md).
+
+===== FILE: project-instructions.md =====
+
+# Claude Project instructions (ready to paste)
+
+Paste everything inside the box below into the Claude Project's **custom instructions** ("Set project instructions"). It is written for the Claude app (chat).
+
+```text
+You help Fabio Bortolazzi write LinkedIn and Instagram content for DandyLions (one word, capital D and L). DandyLions has two halves: Insights = Clarity (speaker & trainer; light ivory theme) and Consulting = Impact (project/programme manager & consultant; inverted sage theme). Tagline: REFLECTION IN MOTION.
+
+SOURCE OF TRUTH
+- At the start of every chat, fetch https://rbijkercom.github.io/dandylions-hub/llms-full.txt and read it before writing anything. If you cannot fetch it, say so and ask Fabio to paste it or retry; do not write from memory.
+- The hub is the ONLY source for brand, voice, offerings, facts, figures, quotes and visual rules. Do not use other websites or your general knowledge about DandyLions or Fabio.
+- The hub is read-only reference maintained by Ruben Bijker. Never propose edits, rewrites or additions to the hub itself, and never offer to update it. If something in the hub looks wrong or missing, mention it as a gap for Ruben.
+
+NEVER INVENT
+- Never invent facts, figures, client names, results, events, dates, prices, testimonials or quotes. Quote testimonials word for word with their exact attribution.
+- Text marked [TO BE SUPPLIED BY RUBEN: ...] is missing. Don't fill it. Keep it as a bracketed placeholder (for example [Date], [Registration link]) and list it under GAPS.
+- The Field notes essays are not published yet: use only the title and one-line dek; never write or summarise an essay body.
+- Fabio's own new ideas, opinions and experiences are welcome when he gives them in the chat; label them as "from Fabio in this chat" in the sources line.
+
+VOICE (see voice/voice-and-tone.md)
+- Fabio speaks as "I" (personal reflections, events, invitations). DandyLions speaks as "we" (services, method). The reader is "you".
+- Calm, precise, warm, a little literary. Name the real situation concretely; define by contrast ("It isn't training."); reframe the problem; short lines with weight. Botanical and craft imagery sparingly (roots, seeds, weaving, the recipe).
+- British spelling. No exclamation marks. No hype ("game-changer", "unlock"). No hashtags or emoji unless Fabio asks. The call to action is an invitation: "Begin the conversation".
+- Write in the language Fabio asks for (English, Italian or Dutch). Use the official IT/NL names from voice/multilingual-glossary.md. If no language is given, ask.
+
+LINKEDIN (see sources/linkedin/README.md and design-system/social-formats.md)
+- Hook in the first two lines (about 200 characters). Short paragraphs. 120–250 words. End with a quiet line and, where it fits, "Begin the conversation" plus the contact link https://dandy-lions.vercel.app/en/contact (or /it/, /nl/).
+- Shapes: field observation, service highlight, idea explainer, event invitation, article share, testimonial.
+- Suggest a visual from the Figma social pack (LI Post 01–03, LI Link 01–02), the theme (Light ivory for Insights, Inverted sage for Consulting) and the exact on-image line.
+
+INSTAGRAM (see sources/instagram/README.md)
+- Single post 1080×1080, carousel 1080×1350 (usually 4 slides), story 1080×1920. Keep on-image text to one quoted line or a few words per slide. Caption first line under about 125 characters; 40–150 words.
+- For each slide give the template (IG Post 01–03, IG Carousel 1/4–4/4, IG Story 01–02), the theme and the exact on-image text.
+- Visual rules: only the colours in design-system/tokens.json; Cormorant Garamond for headlines and quotes, Hanken Grotesk for body and overlines; ivory text on sage only at large sizes.
+
+OUTPUT FORMAT (every draft)
+1. The post (and visual/slide notes).
+2. SOURCES: the hub file(s) each fact or quote came from, e.g. "sources/offerings/policy-compass.md", "sources/about.md (testimonials)".
+3. GAPS: anything missing or uncertain, written as "TO BE SUPPLIED BY RUBEN: ...". Write "None" if there are none.
+Offer one or two alternative hooks when useful. Keep drafts ready to copy.
+```
+
+## How to set it up (for Fabio)
+
+1. In the Claude app, create a Project, for example "DandyLions content".
+2. Open the Project's instructions and paste the text from the box above.
+3. Make sure web search / fetching is enabled for the chat, so Claude can read the hub URL.
+4. Start each chat with a request such as "Draft a LinkedIn post about the four competing loyalties, in English". Claude fetches the hub first.
+
+The hub is public, so no GitHub account or login is needed. When Ruben updates the hub, the next chat reads the new version automatically.
+
+===== FILE: voice/voice-and-tone.md =====
+
+# DandyLions voice and tone
+
+Grounded in the published site copy (https://dandy-lions.vercel.app, EN/IT/NL). Every example below is quoted from the site. Full texts are in `sources/`.
+
+## Who is speaking
+
+- **Fabio Bortolazzi**, founder, speaks as **"I"**: the founder statement, Project Coaching ("I don't take the work off your desk or hand you my plan"), the contact page ("I read every message and reply as a person, not a ticket queue"), Policy Compass ("The point isn't that I stay").
+- **DandyLions**, the practice, speaks as **"we"**: the services, the method and the consulting home ("We help people and organisations navigate complexity, withstand tension and explore new horizons, with clarity and momentum.").
+- The reader is **"you"**: a project manager, director, executive team, policy maker or team under pressure.
+
+For social posts: personal reflections, field observations and event invitations go in Fabio's "I". Descriptions of services and the method go in DandyLions' "we". Don't mix the two in one sentence.
+
+## The two halves
+
+| | Insights | Consulting |
+| --- | --- | --- |
+| Word | **Clarity** | **Impact** |
+| Line | "Rooted in reflection..." | "...blossoming through action." |
+| Register | Reflective, essayistic, naming what hasn't been named | Practical, direct, about decisions, roles and delivery |
+| Formats | Keynotes, masterclasses, training, learning on the job, field notes | Team Alignment, Project Coaching, Policy Compass, Collaborative Kitchen, The Story Beneath, Pattern Weaver Approach |
+| Theme | Light (ivory) | Inverted (sage) |
+
+## Tone
+
+Calm, precise, warm and a little literary. It names tension without drama and treats the reader as a capable professional.
+
+- **Name the real situation, concretely.** "A stakeholder who keeps changing their mind, a scope that has quietly doubled, and a delivery date nobody believes in anymore." "We start with whatever landed in your inbox this morning."
+- **Define by contrast.** "It isn't training." / "It isn't consulting." "A boundary is not a wall. It is the place where you can still be reached and still be yourself." "A mission is not an assignment."
+- **Reframe the problem.** "The issue is not that organizations do not have solutions; it's that they often do not know what causes their problems." "The fix isn't a better template."
+- **Short lines with weight.** "If you recognised yourself in this, the work has begun." "Legacy isn't a mausoleum, but a root system."
+- **Botanical and craft imagery**, used sparingly: roots, seeds, sowing, blossoming (dandelion); weaving and threads (Pattern Weaver, "The weaver mind"); the recipe, tasting and adjusting (Collaborative Kitchen).
+- **A light, human wink** now and then: "No one likes getting older, but growing is a blast."
+- **Invitation, not pressure.** The call to action is "Begin the conversation".
+
+## Vocabulary
+
+Use: clarity, direction, momentum; tension; complexity; technical vs adaptive problems; system, roles, boundaries, the primary task; stakeholders; sponsor; loyal dissent; "hold" tension or complexity; reflection; "in action".
+
+Named ideas that belong to DandyLions or that the site cites:
+
+- **Ready · Set · Go → Clarity · Direction · Momentum** (the way of working).
+- **Technical vs adaptive problems**: sense–analyze–respond vs probe–sense–respond. Quote on the site from Ronald Heifetz.
+- **Four competing loyalties**: the executive top, the end users, the direct manager, the law and governance.
+- **Policy Compass**: an instrument developed by the Dutch government. Also mentioned: Opgavegericht werken.
+- **Keynote · Masterclass · Training · Learning-on-the-job** = the spark, the map, the practice, long-lasting impact.
+- The work draws on **systems psychodynamics and narrative approaches** (The Story Beneath).
+
+## Style rules
+
+- British spelling: organisation, programme, recognise, behaviour. (The site has a few "-ize" spellings; prefer "-ise".)
+- No exclamation marks. The site copy has none.
+- No emojis on the site. On social, use none, or at most one, and only if Ruben's hashtag/emoji policy allows it. [TO BE SUPPLIED BY RUBEN: emoji and hashtag policy.]
+- Em dashes are used sparingly on the site; prefer commas, full stops or a colon in posts.
+- Questions are welcome as openers or section heads ("What happens here?", "What do we do about it?").
+- Bold only for key nouns, as in "for **boards** and **executive teams**".
+- Avoid hype words and growth-hacking phrasing: no "game-changer", "unlock", "10x", "synergy", "hack", "crush it". Avoid generic coaching clichés that the site never uses.
+
+## Multilingual
+
+The site is published in English (`en`), Italian (`it`) and Dutch (`nl`). Fabio is Italian and works in the Netherlands.
+
+- Write a post in the language asked for. If none is given, ask, or default to English.
+- Use the official names per language from [multilingual-glossary.md](multilingual-glossary.md). Some names stay in English in Dutch (Collaborative Kitchen, Learning on the job, Consulting).
+- Don't machine-translate the English testimonials; they are published in English only in this hub. [TO BE SUPPLIED BY RUBEN: approved IT/NL versions of testimonials, if wanted.]
+- Italian and Dutch site copy follows the same tone: calm, precise, warm. The full IT/NL copy lives on the live site under `/it` and `/nl`.
+
+===== FILE: voice/multilingual-glossary.md =====
+
+# Multilingual glossary (EN / IT / NL)
+
+Official terms as published on the live site in each language (`reference/copy.json` in rbijkercom/dandy-lions). Use these exact forms; don't translate brand and service names yourself. "DandyLions" never changes.
+
+| Term | English | Italiano | Nederlands |
+| --- | --- | --- | --- |
+| Tagline | Reflection in motion | Riflessione in movimento | Reflectie in beweging |
+| Insights | Insights | Prospettive | Inzichten |
+| Consulting | Consulting | Consulenza | Consulting |
+| Clarity | Clarity | Chiarezza | Helderheid |
+| Impact | Impact | Impatto | Impact |
+| Insights role | Speaker & trainer | Relatore e formatore | Spreker & trainer |
+| Consulting role | Project/Programme manager & consultant | Gestore di progetti/programmi aziendali e consulente | Project-/programmamanager & consultant |
+| Insights line | Rooted in reflection... | Radicato nella riflessione... | Geworteld in reflectie... |
+| Consulting line | ...blossoming through action. | ...sbocciato attraverso l'azione. | ...tot bloei door actie. |
+| Team Alignment | Team Alignment | Allineamento del team | Teamalignment |
+| Project Coaching | Project Coaching | Coaching di progetto | Projectcoaching |
+| Policy Compass | Policy Compass | Bussola delle Decisioni | Het Beleidskompas |
+| Collaborative Kitchen | Collaborative Kitchen | Cucina Collaborativa | Collaborative Kitchen |
+| The Story Beneath | The Story Beneath | La Storia Sommersa | Het Verborgen Verhaal |
+| Pattern Weaver Approach | Pattern Weaver Approach | Approccio Pattern Weaver | Pattern Weaver Aanpak |
+| Educational Events | Educational Events and Learning on the Job | Eventi formativi e Formazione sul Lavoro | Educatieve events en Learning on the Job |
+| Learning on the job | Learning on the job | Formazione sul lavoro | Learning on the job |
+| Call to action | Begin the conversation | Inizia la conversazione | Begin het gesprek |
+| Field notes | Field notes | Appunti di campo | Veldnotities |
+| Consulting headline | What do we do about it? | Cosa facciamo al riguardo? | Wat doen we eraan? |
+| Consulting lede | We help people and organisations navigate complexity, withstand tension and explore new horizons, with clarity and momentum. | Aiutiamo persone e organizzazioni a muoversi nella complessità, a sostenere la tensione e a esplorare nuovi orizzonti, con chiarezza e slancio. | We helpen mensen en organisaties zich te bewegen in complexiteit, spanning te verdragen en nieuwe horizonten te verkennen, met helderheid en momentum. |
+| Insights headline | What happens here? | Cosa succede qui? | Wat gebeurt er hier? |
+| Insights closing line | No one likes getting older, but growing is a blast. | Invecchiare non piace a nessuno, ma crescere è una bomba. | Niemand wordt graag ouder, maar groeien is een genot. |
+| Consulting closing line | If you recognised yourself in this, the work has begun. | Se ti sei riconosciuto in questo, il lavoro è già iniziato. | Als je jezelf hierin herkent, is het werk al begonnen. |
+| Insights reach | By invitation · worldwide | Su invito · in tutto il mondo | Op uitnodiging · wereldwijd |
+| Consulting reach | Remote & on-site · Europe | Da remoto e in sede · Europa | Op afstand & op locatie · Europa |
+| The dandelion | The dandelion | Il dente di leone | De paardenbloem |
+| The lion | The lion | Il leone | De leeuw |
+| The dandy | The dandy | Il dandy | De dandy |
+| Vision | Vision | Visione | Visie |
+| Mission | Mission | Missione | Missie |
+| Ambition | Ambition | Ambizione | Ambitie |
+| Legacy | Legacy | Eredità | Nalatenschap |
+| Legacy line | Legacy isn't a mausoleum, but a root system. Impact isn't what we build—it's what continues to grow after we sow. | L'eredità non è un mausoleo da ereggere, ma un sistema di radici da far crescere. L'impatto non sta in ciò che costruiamo, ma in ciò che continua a crescere dopo che abbiamo finito di seminare. | Nalatenschap is geen mausoleum, maar een wortelstelsel. Impact zit niet in wat we bouwen, maar in wat blijft bloeien nadat we gezaaid hebben. |
+| Step 1 | Ready · Clarity | Pronti · Chiarezza | Klaar · Helderheid |
+| Step 2 | Set · Direction | Partenza · Direzione | Voor · Richting |
+| Step 3 | Go · Momentum | Via · Slancio | Af · Momentum |
+| Format 1 | Keynote: The spark. | Presentazione: La scintilla. | Keynote: De vonk. |
+| Format 2 | Masterclass: The map. | Masterclass: La mappa. | Masterclass: De kaart. |
+| Format 3 | Training: The practice. | Training: La pratica. | Training: De praktijk. |
+| Format 4 | Learning-on-the-job: Long-lasting impact. | Learning-on-the-job: Impatto duraturo. | Learning-on-the-job: Blijvende impact. |
+| Topic 1 | The weaver mind | La mente del tessitore | De wevende geest |
+| Topic 2 | Identity & personal boundaries | Identità & confini personali | Identiteit & persoonlijke grenzen |
+| Topic 3 | Functioning systems & systemic boundaries | Sistemi funzionanti & confini sistemici | Werkende systemen & systemische grenzen |
+| Topic 4 | (Neuro)diversity & Inclusion | (Neuro)diversità & inclusione | (Neuro)diversiteit & inclusie |
+| Topic 5 | Learning on the job | Formazione sul lavoro | Learning on the job |
+| Method tab 1 | Types of problems | Tipi di problemi | Soorten problemen |
+| Method tab 2 | Where we come in | Dove interveniamo | Waar wij binnenkomen |
+| Method tab 3 | Four competing loyalties | Quattro lealtà in conflitto | Vier concurrerende loyaliteiten |
+| Method tab 4 | Shifting gears | Cambiare marcia | Schakelen |
+| Article 1 | Power without a throne | Potere senza trono | Macht zonder troon |
+| Article 2 | Standing on the line | Stare sulla linea | Op de lijn staan |
+| Article 3 | The one who speaks first | Chi parla per primo | Wie het eerst spreekt |
+| Article 4 | Lines that hold sand | Linee che trattengono la sabbia | Lijnen die zand vasthouden |
+| Article 5 | What holds a system up | Cosa tiene in piedi un sistema | Wat een systeem overeind houdt |
+
+Language codes on the site: `/en`, `/it`, `/nl` (for example https://dandy-lions.vercel.app/it/consulting).
+
+===== FILE: design-system/brand-rules.md =====
+
+# DandyLions brand rules
+
+Source: Figma file ADAT7igJnBG5nvij5shy9V, "Brand identity style guide" (13 spreads) and "Full Design System", plus `docs/design-system.md` in the site repo. Exact colour and type values are in [tokens.json](tokens.json).
+
+## Name and tagline
+
+- The name is **DandyLions**: one word, capital D, capital L. Never "Dandy Lions", "Dandylions" or "DANDYLIONS" in running text.
+- The tagline is **REFLECTION IN MOTION**. On the site it is set as "Reflection in motion". Italian: "Riflessione in movimento". Dutch: "Reflectie in beweging".
+- Essence (brand guide, spread 02): "A calm botanical identity: heritage letterforms, a lion in transformation and the balance of ivory and sage. Reflection leads to clarity; clarity creates impact."
+- The two halves of the brand:
+  - **Insights**: *Clarity*. Speaker & trainer. Light theme (ivory). Line: "Rooted in reflection..."
+  - **Consulting**: *Impact*. Project/Programme manager & consultant. Inverted theme (sage). Line: "...blossoming through action."
+
+## Logo
+
+The logo has three formats (brand guide, spread 03):
+
+- **Full lockup**: lion symbol with the wordmark.
+- **Symbol**: the lion mark on its own. Live file: https://dandy-lions.vercel.app/brand/logo-symbol.svg
+- **Wordmark**: "Dandy" over "Lions", set in Cormorant Garamond Light.
+
+Colour by theme:
+
+- Light: charcoal `#2D2D2D` logo on ivory `#F5F2EC`.
+- Inverted: ivory `#F5F2EC` logo on sage `#748262`.
+
+Clear space and size (spread 04):
+
+- Clear space: x = one wordmark cap-height, kept clear on every side.
+- Starter minimum widths: 180 px, 80 px and 120 px, shown on the canvas for the full lockup, symbol and wordmark. [TO BE CONFIRMED BY RUBEN: exact mapping of each minimum width to each format.]
+- Avatar use: the symbol sits inside the centre 70% of a circle crop.
+
+## Lion motif and archetypes
+
+- The lion motif appears as charcoal on ivory and as ivory on sage (spread 10). The split homepage uses charcoal and ivory lion artwork.
+- The brand story rests on three archetypes, each with an icon (archetype dandelion, archetype lion, archetype dandy):
+  - The dandelion: resilience as renewal.
+  - The lion: courage, dignity, direction.
+  - The dandy: the courage of being eccentric.
+
+## Graphic devices
+
+From the Figma social media pack and brand guide:
+
+- **Paper grain** on ivory and on sage, very subtle (3.5% opacity).
+- **Seed head**: a large dandelion seed head, cropped off an edge, at 20–60% opacity.
+- **Drifting seeds**: 2–4 per layout, rising away from the seed head.
+- **Gold rule**: 72–96 × 3 px, under the overline.
+- **Linear vs emergent line**: shows technical vs adaptive problems (used in carousels).
+- **Badges**: number and icon badges in sage muted, wine, ochre and forest.
+- **Icons**: the custom line icon set from the live site (arrow up-right, check, Instagram, LinkedIn, mail, menu, eye = Vision, compass = Mission, trend up = Ambition, sprout = Legacy, lion, dandelion, archetypes, map pin, plus).
+
+## Imagery
+
+Photography on the live site (spread 08): Fabio at work, on stage and in the field, plus quiet still lifes and objects. Examples in use:
+
+- On stage (Insights)
+- In the field (Consulting)
+- Weaver loom (Pattern Weaver Approach)
+- Chess pieces (Field Notes)
+- Hands and dough (Collaborative Kitchen)
+- Compass and notebook (Policy Compass)
+
+Until a real photo is supplied, use a pale-sage `#C6CAB9` placeholder block with a bracketed description, for example "[Photo — speaker at a keynote]".
+
+## Do
+
+- Use only the colours in `tokens.json`. Ivory, sage and charcoal carry the layout. Gold is a quiet accent.
+- Pair Cormorant Garamond (headlines, quotes, ledes) with Hanken Grotesk (body, labels, overlines).
+- Use sage with ivory text only at 24 px and above (contrast 3.68:1).
+- Use gold-deep `#7A663C` for overlines and accent text on ivory.
+- Keep layouts calm, with generous space and few elements.
+- Use copy from `sources/`. Mark anything missing in [brackets].
+
+## Don't
+
+- Don't add one-off colours or type sizes.
+- Don't use a charcoal "dark" theme as a website theme; the site has only Light (ivory) and Inverted (sage).
+- Don't use sage-deep `#646F55` or the old sage `#7F8D6C`.
+- Don't use gold for text on charcoal. On charcoal, gold is for rules and seeds only.
+- Don't set small ivory text on sage.
+- Don't use stock icon packs (Phosphor, Lucide and so on); the brand has its own icon set.
+- Don't publish a template with [bracketed] placeholders still in it.
+
+===== FILE: design-system/social-formats.md =====
+
+# Social formats: LinkedIn and Instagram
+
+Source: Figma file ADAT7igJnBG5nvij5shy9V, section "Social media pack" (October 2026). The templates are built from the brand system: Cormorant Garamond and Hanken Grotesk; ivory, sage and charcoal with gold accents; the logo component; and the graphic devices in [brand-rules.md](brand-rules.md). All template copy comes from the live site. Event details and photos are placeholders in [brackets].
+
+## Sizes and safe zones
+
+| Format | Size (px) | Safe zone |
+| --- | --- | --- |
+| LinkedIn post | 1200 × 1200 | 96 px margin on all sides |
+| LinkedIn link image | 1200 × 627 | 72 px margin; keep the headline clear of the bottom edge (title bar) |
+| LinkedIn company banner | 1128 × 191 | The page logo covers the bottom left on desktop: keep copy right of x 300 and away from the side edges (cropped on mobile) |
+| LinkedIn avatar | 400 × 400 | Shown as a circle; keep the symbol inside the centre 70% |
+| Instagram post | 1080 × 1080 | 88 px margin; the profile grid crops the edges, keep key content central |
+| Instagram carousel | 1080 × 1350 | 88 px margin |
+| Instagram story | 1080 × 1920 | Keep text between y 250 and y 1580; the top 250 px and bottom 340 px sit under the app UI |
+
+Export at 1× PNG, or 2× for crisp text.
+
+## Type at social scale
+
+- Headlines and quotes: Cormorant Garamond Light/Regular, 88–128 px.
+- Supporting lines: Cormorant Garamond Italic, 34–44 px.
+- Body: Hanken Grotesk Regular, 22–32 px.
+- Overlines: Hanken Grotesk caps with wide tracking, 18–22 px.
+
+## Colour pairs
+
+- Ivory + charcoal: 12.3:1, any size.
+- Ivory + gold-deep: 4.9:1, overlines and accents.
+- Sage + ivory: 3.68:1, large text only (24 px and up).
+- Charcoal + ivory: 12.3:1; gold for rules and seeds only.
+
+## Templates in the Figma pack
+
+Each template names the source it draws from, so the copy can be swapped for other material in `sources/`.
+
+### LinkedIn
+
+| Template | Size | What it shows | Source |
+| --- | --- | --- | --- |
+| LI Post 01: Insight quote | 1200 × 1200 | Overline, quote mark, a short quote, support line, logo, seed head | Any quote line from `sources/` |
+| LI Post 02: Service highlight | 1200 × 1200 | Photo band, service name, headline, the four "How it works" steps (01–04) | `sources/offerings/the-story-beneath.md` (example) |
+| LI Post 03: Event | 1200 × 1200 | Topic title, one-line pull quote, [Date], [Time], [Venue / online], [Registration link] | `sources/offerings/educational-events.md` (The weaver mind) |
+| LI Link 01: Field notes article | 1200 × 627 | Photo panel, article title and dek | `sources/articles.md` (Power without a throne) |
+| LI Link 02: Pattern Weaver Approach | 1200 × 627 | One statement plus the four tab names | `sources/offerings/pattern-weaver-approach.md` |
+| LI Company banner | 1128 × 191 | "Rooted in reflection… …blossoming through action." | `sources/about.md` |
+| LI Avatar / logo | 400 × 400 | Lion symbol on a seed head | `brand-rules.md` |
+
+### Instagram
+
+| Template | Size | What it shows | Source |
+| --- | --- | --- | --- |
+| IG Post 01: The dandelion | 1080 × 1080 | Archetype icon, title, one-line meaning | `sources/about.md` (archetypes) |
+| IG Post 02: Track record | 1080 × 1080 | 35+, 12, 100+ with labels | `sources/about.md` (track record) |
+| IG Post 03: Legacy | 1080 × 1080 | The Legacy statement in two lines | `sources/about.md` |
+| IG Carousel 1/4–4/4 | 1080 × 1350 | Cover; Technical problems; Adaptive problems; Where we come in, with a button | `sources/offerings/pattern-weaver-approach.md` |
+| IG Story 01: Ready, Set, Go | 1080 × 1920 | "What do we do about it?" plus Clarity, Direction, Momentum | `sources/offerings/consulting.md` |
+| IG Story 02: Educational Events | 1080 × 1920 | Photo, topic, Keynote / Masterclass / Training, event details and a link sticker | `sources/offerings/educational-events.md` |
+
+## Fill in before posting
+
+- Event details: [Date], [Time], [Venue / online], [Registration link] on LI Post 03 and IG Story 02.
+- Photos: LI Post 02 (team session), LI Link 01 (chess-king image from the essay), IG Story 02 (keynote).
+- Story link sticker: add the registration link sticker in Instagram over the dashed area.
+
+## Text limits (platform facts)
+
+- LinkedIn post: up to 3,000 characters; roughly the first 200 characters show before "see more".
+- Instagram caption: up to 2,200 characters; roughly the first 125 characters show before "more". Up to 30 hashtags are allowed. DandyLions has no hashtag policy yet: [TO BE SUPPLIED BY RUBEN].
+
+===== FILE: design-system/tokens.json =====
+
+{
+  "$meta": {
+    "brand": "DandyLions",
+    "tagline": "REFLECTION IN MOTION",
+    "sources": [
+      "rbijkercom/dandy-lions main: src/app/(frontend)/styles.css and docs/design-system.md (Figma DS sync of 7 Oct 2026, PR #21, branch ruben/figma-ds-sync-oct7)",
+      "Figma file ADAT7igJnBG5nvij5shy9V, page '01 — Brand & system', section 'Full Design System' (variables) and 'Brand identity style guide'"
+    ],
+    "note": "Curated tokens for content creation. When the site and Figma disagree, the site (code) wins. design-system/upstream/ holds the raw synced files.",
+    "updated": "2026-10-08"
+  },
+  "color": {
+    "primitives": {
+      "ivory": { "hex": "#F5F2EC", "rgb": "245 242 236", "role": "Primary canvas (Light theme page)" },
+      "sage": { "hex": "#748262", "rgb": "116 130 98", "role": "Signature field, large areas (Inverted theme page)" },
+      "charcoal": { "hex": "#2D2D2D", "rgb": "45 45 45", "role": "Primary text and ink, logo on Light" },
+      "gold": { "hex": "#907948", "rgb": "144 121 72", "role": "Quiet accent, hover fill, rules and seeds" },
+      "gold-deep": { "hex": "#7A663C", "rgb": "122 102 60", "role": "Accent text (overlines) on ivory, pressed gold" },
+      "pale-sage": { "hex": "#C6CAB9", "rgb": "198 202 185", "role": "Soft surface, selection, photo placeholders" },
+      "body-ink": { "hex": "#454340", "rgb": "69 67 64", "role": "Body text on ivory and cards" },
+      "card-surface": { "hex": "#FBF9F4", "rgb": "251 249 244", "role": "Content cards" },
+      "card-border": { "hex": "#E3DDCE", "rgb": "227 221 206", "role": "Card outline and divider" },
+      "control-fill": { "hex": "#E9E8DF", "rgb": "233 232 223", "role": "Button and pill fill" },
+      "control-border": { "hex": "#CFCEC6", "rgb": "207 206 198", "role": "Pill and divider borders" },
+      "selected-sand": { "hex": "#C3C0A6", "rgb": "195 192 166", "role": "Selected tab segment, pressed button" },
+      "option-hover": { "hex": "#F1EEE6", "role": "Hover on menu options" },
+      "selector-border": { "hex": "#B0B3A5", "role": "Selection border" },
+      "error": { "hex": "#9E3B2B", "role": "Feedback error on Light" },
+      "error-deep": { "hex": "#FF9F9F", "role": "Feedback error on Inverted (sage)" }
+    },
+    "accents": {
+      "sage-muted": { "hex": "#7C866D", "role": "Icon and number badges" },
+      "wine": { "hex": "#632631", "role": "Icon and number badges" },
+      "ochre": { "hex": "#AA8653", "role": "Icon and number badges" },
+      "forest": { "hex": "#183930", "role": "Icon and number badges" }
+    },
+    "retired": {
+      "sage-original": { "hex": "#7F8D6C", "note": "Reference only. Previous sage. Do not use." },
+      "sage-deep": { "hex": "#646F55", "note": "Does not exist in the system. Inverted surfaces are sage #748262." }
+    },
+    "contrastPairs": [
+      { "pair": "ivory + charcoal", "ratio": "12.3:1", "use": "Any size" },
+      { "pair": "ivory + gold-deep", "ratio": "4.9:1", "use": "Overlines and accents" },
+      { "pair": "sage + ivory", "ratio": "3.68:1", "use": "Large text only (24 px and up)" },
+      { "pair": "charcoal + ivory", "ratio": "12.3:1", "use": "Gold only for rules and seeds on charcoal" }
+    ]
+  },
+  "themes": {
+    "light": {
+      "name": "Light (ivory)",
+      "usedFor": "Insights, About, and the ivory content band on Consulting",
+      "selector": "[data-theme='light'], .tone-light",
+      "surface": { "page": "#F5F2EC", "raised": "#E9E8DF", "card": "#FBF9F4" },
+      "text": { "primary": "#2D2D2D", "body": "#454340", "dimmed": "rgb(45 45 45 / 75%)", "accent": "#7A663C", "inverse": "#F5F2EC" },
+      "brand": { "accent": "#907948", "logo": "#2D2D2D" },
+      "border": { "subtle": "#CFCEC6", "control": "#2D2D2D", "card": "#E3DDCE" },
+      "button": { "secondaryFill": "#E9E8DF", "secondaryHoverFill": "#907948", "border": "#CFCEC6", "pressedFill": "#C3C0A6" },
+      "feedback": { "error": "#9E3B2B" },
+      "focusRing": "#2D2D2D",
+      "shadowHover": "rgb(144 121 72 / 20%)"
+    },
+    "inverted": {
+      "name": "Inverted (sage)",
+      "usedFor": "Consulting header, hero and footer",
+      "selector": "[data-theme='inverted'], .tone-sage",
+      "surface": { "page": "#748262", "raised": "#748262", "card": "#FBF9F4", "cardThemed": "#748262" },
+      "text": { "primary": "#F5F2EC", "body": "#F5F2EC", "dimmed": "#F5F2EC", "accent": "#F5F2EC", "inverse": "#2D2D2D" },
+      "brand": { "accent": "#F5F2EC", "logo": "#F5F2EC" },
+      "border": { "subtle": "rgb(245 242 236 / 35%)", "control": "#F5F2EC", "card": "#E3DDCE" },
+      "button": { "secondaryFill": "rgb(45 45 45 / 12%)", "secondaryHoverFill": "#F5F2EC", "border": "rgb(245 242 236 / 35%)", "pressedFill": "#C3C0A6" },
+      "feedback": { "error": "#FF9F9F" },
+      "focusRing": "#F5F2EC",
+      "shadowHover": "rgb(144 121 72 / 20%)"
+    },
+    "note": "There is no charcoal 'dark' theme on the site. Charcoal backgrounds appear only in some social templates."
+  },
+  "typography": {
+    "families": {
+      "serif": { "name": "Cormorant Garamond", "weights": ["300 Light", "400 Regular", "400 Italic", "600 SemiBold"], "use": "Headings, brand, quotes, ledes, editorial paragraphs", "fallback": "Georgia, 'Times New Roman', serif" },
+      "sans": { "name": "Hanken Grotesk", "weights": ["400 Regular"], "use": "Body, lists, card copy, labels, UI controls", "fallback": "Arial, Helvetica, sans-serif" }
+    },
+    "scale": {
+      "display": { "family": "serif", "weight": 300, "size": "44px mobile / 60px from 768px", "lineHeight": 1.04, "letterSpacing": "-3%" },
+      "h1": { "family": "serif", "weight": 400, "size": "32px mobile / 40px desktop", "lineHeight": "36px / 46px", "letterSpacing": "-0.32px / -0.4px" },
+      "h2": { "family": "serif", "weight": 400, "size": "32px", "lineHeight": "38px", "letterSpacing": "-0.32px" },
+      "h3": { "family": "serif", "weight": 400, "size": "24px", "lineHeight": "30px", "letterSpacing": "-0.24px" },
+      "h4": { "family": "serif", "weight": 400, "size": "20px", "lineHeight": "26px" },
+      "lead": { "family": "serif", "weight": 300, "size": "20px mobile / 28px desktop", "lineHeight": 1.44 },
+      "reading": { "family": "serif", "weight": 300, "size": "18–24px", "lineHeight": 1.42, "letterSpacing": "-0.005em" },
+      "supportingItalic": { "family": "serif", "weight": 400, "style": "italic", "size": "22px", "lineHeight": "30px" },
+      "emphasis": { "family": "serif", "weight": 600, "size": "20px", "lineHeight": "26px" },
+      "routeTitle": { "family": "serif", "weight": 400, "size": "46px", "lineHeight": "58px", "letterSpacing": "-0.46px" },
+      "wordmark": { "family": "serif", "weight": 300, "size": "34–84px", "lineHeight": 0.95, "letterSpacing": "-0.035em" },
+      "bodyLarge": { "family": "sans", "weight": 400, "size": "18px", "lineHeight": "28px" },
+      "body": { "family": "sans", "weight": 400, "size": "16px", "lineHeight": "24px" },
+      "bodySmall": { "family": "sans", "weight": 400, "size": "14px", "lineHeight": "21px" },
+      "caption": { "family": "sans", "weight": 400, "size": "12px", "lineHeight": "18px" },
+      "uiLabel": { "family": "sans", "weight": 400, "size": "14px", "lineHeight": "20px", "letterSpacing": "1.5px", "transform": "uppercase" },
+      "uiControl": { "family": "sans", "weight": 400, "size": "12px", "lineHeight": "20px", "letterSpacing": "1.2px", "transform": "uppercase" },
+      "overline": { "family": "sans", "weight": 400, "size": "11px", "lineHeight": "20px", "letterSpacing": "2.4px", "transform": "uppercase" }
+    },
+    "socialScale": {
+      "headlinesAndQuotes": "Cormorant Garamond Light/Regular, 88–128 px",
+      "supportingLines": "Cormorant Garamond Italic, 34–44 px",
+      "body": "Hanken Grotesk Regular, 22–32 px",
+      "overlines": "Hanken Grotesk caps with wide tracking, 18–22 px",
+      "source": "Figma Social media pack, Pack guide"
+    }
+  },
+  "spacing": {
+    "scale": [4, 8, 12, 16, 24, 32, 48, 64, 80, 96, 120],
+    "sectionGap": 96,
+    "pageMargin": { "mobile": 24, "tablet": 48, "desktop": 64 },
+    "gridGutter": { "mobile": 16, "tabletUp": 24 },
+    "gridColumnsMobile": 4,
+    "contentMaxWidth": 1312,
+    "readingMeasure": 720,
+    "controlMin": 44,
+    "breakpoints": [768, 1200],
+    "unit": "px"
+  },
+  "radius": { "pill": 999, "card": 12, "field": 8, "small": 4 },
+  "effects": {
+    "grain": {
+      "description": "Fixed paper-grain overlay on ivory and sage (feTurbulence fractalNoise, baseFrequency 0.85), 150px tile",
+      "opacity": 0.035,
+      "asset": "https://dandy-lions.vercel.app/brand/grain.png"
+    },
+    "hoverLift": { "type": "drop-shadow", "offset": "0 8px", "blur": 16, "color": "rgb(144 121 72 / 20%)" }
+  },
+  "motion": { "ease": "cubic-bezier(0.33, 0, 0.15, 1)" }
+}
+
+===== FILE: sources/README.md =====
+
+# Sources
+
+Everything Claude may state as fact about DandyLions lives here. Each file says where its text came from. Most text is copied word for word from the live site, https://dandy-lions.vercel.app (English).
+
+| File | What's in it | Status |
+| --- | --- | --- |
+| [about.md](about.md) | Fabio, the two halves, archetypes, vision/mission/ambition/legacy, track record, testimonials, contact | Published |
+| [offerings/insights.md](offerings/insights.md) | Insights home: formats (keynote, masterclass, training, learning on the job), newsletter | Published |
+| [offerings/educational-events.md](offerings/educational-events.md) | Educational Events: the five topics | Published; event dates missing |
+| [offerings/consulting.md](offerings/consulting.md) | Consulting home, Ready/Set/Go, services list, Team Alignment | Published; Team Alignment has no page |
+| [offerings/project-coaching.md](offerings/project-coaching.md) | Project Coaching | Published |
+| [offerings/policy-compass.md](offerings/policy-compass.md) | Policy Compass | Published |
+| [offerings/collaborative-kitchen.md](offerings/collaborative-kitchen.md) | Collaborative Kitchen | Published |
+| [offerings/the-story-beneath.md](offerings/the-story-beneath.md) | The Story Beneath | Published |
+| [offerings/pattern-weaver-approach.md](offerings/pattern-weaver-approach.md) | Pattern Weaver Approach: technical vs adaptive, four loyalties | Published |
+| [articles.md](articles.md) | Field notes: five titles and one-line deks | Titles only; essay texts missing |
+| [linkedin/](linkedin/README.md) | How to write LinkedIn posts, template, approved posts | Guide ready; no approved posts yet |
+| [instagram/](instagram/README.md) | How to write Instagram posts, template, approved posts | Guide ready; no approved posts yet |
+
+## Placeholders
+
+Text in the form **[TO BE SUPPLIED BY RUBEN: ...]** marks something that isn't available yet. Claude must not fill it in. Flag it in the answer instead.
+
+## Not in this hub, on purpose
+
+- Postal address, Chamber of Commerce (KvK) and VAT numbers, phone numbers. They aren't needed for social content.
+- Figma-only drafts that were never published (newsletter and campaign texts, event details).
+- Client names or case studies that aren't on the live site.
+
+===== FILE: sources/about.md =====
+
+# About Fabio and DandyLions
+
+Source: live site https://dandy-lions.vercel.app/en (split home) and https://dandy-lions.vercel.app/en/about (seeded from `reference/copy.json` in rbijkercom/dandy-lions). Status: published. Quote verbatim; do not add facts.
+
+## Founder
+
+Fabio Bortolazzi, founder of DandyLions. On the site he writes in the first person ("I").
+
+- My name is Fabio Bortolazzi and I am the founder of DandyLions, born from my experience at the intersection of people, power and progress.
+- I led, designed, and evaluated national policies and organisational developments, moving between strategy and execution, between systems and individuals.
+- These experiences became the foundation of DandyLions, driven by an aspiration to create impact that's felt before it can be measured.
+
+Closing line (Insights side of the home page): "No one likes getting older, but growing is a blast."
+
+## Who DandyLions is for (Consulting side of the home page)
+
+- There's a moment, in a room full of people, when silence says more than words. DandyLions is born from that moment — when different minds and perspectives meet.
+- It's for boards and executive teams circling the same conversation without landing it, for start-ups and investors sensing the next step isn't a bigger plan, but clarity about what belongs together.
+- It's for policy makers, politicians, consultants and everyone working on projects that create an impact bigger than themselves.
+
+Closing line: "If you recognised yourself in this, the work has begun."
+
+## The two halves
+
+| | Insights | Consulting |
+| --- | --- | --- |
+| Word | Clarity | Impact |
+| Role | Speaker & trainer | Project/Programme manager & consultant |
+| Line | Rooted in reflection... | ...blossoming through action. |
+| What this looks like | Keynote speeches, Training & workshops, Facilitation & masterclasses | Programme management, Project management, Management consulting, Team facilitation, Org. development |
+| Tags | Keynotes, Masterclasses, Training, Storytelling, Coaching | |
+| Where | By invitation · worldwide | Remote & on-site · Europe |
+| Contact | insights@dandylions.eu | consulting@dandylions.eu |
+
+Tagline: "Reflection in motion". Call to action used across the site: "Begin the conversation" (opens the contact page, https://dandy-lions.vercel.app/en/contact).
+
+Contact page copy: "Tell me a little about the work. I read every message and reply as a person, not a ticket queue."
+
+## Our identity: the three archetypes
+
+- **The dandelion**: Resilience as renewal. The end of a cycle, so the future can take roots. Growing through the cracks and spreading with ease.
+- **The lion**: Courage, dignity, direction. Power that doesn't need to prove itself. A roar that empowers, instead of threatening.
+- **The dandy**: The courage of being eccentric. Self-authorship born out of inner clarity. Acceptance of being misunderstood.
+
+## Vision, mission, ambition, legacy
+
+- **Vision**: A professional world where people act with awareness, teams move in alignment, and systems evolve through understanding. Where we work alongside machines — without becoming one ourselves.
+- **Mission**: To help professionals, teams, and organizations grow into autonomous DandyLions — by supporting their orientation, cultivating inner reflection, and accelerating collaboration.
+- **Ambition**: To be the secular custodian of organizations: caring for what emerges when people meet systems. Cultivating a human-centered approach, capable of growing alongside artificial intelligence.
+- **Legacy**: Legacy isn't a mausoleum, but a root system. Impact isn't what we build—it's what continues to grow after we sow.
+
+## Track record (Facts & Figures)
+
+- 35+ projects, programmes & assignments
+- 12 years within Dutch national government
+- experience across ministries, agencies & regulators
+- 100+ trainings, workshops & facilitated sessions
+
+Note: the third item has no number on the live site. Do not add one. [TO BE SUPPLIED BY RUBEN: figure for "experience across ministries, agencies & regulators", if any.]
+
+## In their words (testimonials, published on the About page)
+
+Use these word for word with the attribution exactly as shown. Do not shorten them in a way that changes meaning, and do not create new ones.
+
+> Fabio doesn't shy away from anything. He notices work that needs doing and shares it around. He's intelligent and articulates things well. He puts in above-average effort, and handles feedback with real grace. He's a model for strengthening quality.
+>
+> — Fabio's line manager
+
+> Fabio added real value through his reflections on the issue at hand, his grasp of the steps required, and a clear sense of what outcomes could — and couldn't — be achieved.
+>
+> — Director of Forensic Care, a major national agency
+
+> Through his personality, he earned a great deal of appreciation from everyone involved. His background, his accent, and his presence make him disarming. This — among other things — created buy-in and a mutual willingness to engage.
+>
+> — Middle manager, Strategy Directorate, a major national agency
+
+> Enthusiasm, curiosity, and above all personal involvement and genuine interest are among Fabio's strongest qualities.
+>
+> — Programme manager, innovation programme, at a ministry
+
+> Fabio designed and facilitated an enjoyable, clear, and genuinely useful session for us. We're a fairly challenging team, working in a complex programme. Both in the preparation and during the session itself, Fabio brought the flexibility and the structure we needed.
+>
+> — Middle manager, Regional Emergency Management, at a ministry
+
+## Not available yet
+
+- [TO BE SUPPLIED BY RUBEN: client names or case studies cleared for public use.]
+- [TO BE SUPPLIED BY RUBEN: approved photos of Fabio for social posts.]
+
+===== FILE: sources/offerings/insights.md =====
+
+# Insights (Clarity)
+
+Source: live site https://dandy-lions.vercel.app/en/insights (seeded from `reference/copy.json` in rbijkercom/dandy-lions). Status: published. Quote verbatim; do not add facts.
+
+Theme: Light (ivory). Word: **Clarity**. Role: Speaker & trainer. By invitation · worldwide.
+
+## Insights home
+
+**What happens here?**
+
+Through reflection, we create new perspectives. We give professional experience original concepts, showing hidden patterns, giving language to what doesn't yet have a name, and working with what hasn't taken root yet.
+
+## Formats (four depths)
+
+- **Keynote** (Inspiration) · *The spark.* It inspires, gives something a name, opens a question that can no longer be unasked. It is the entry point to every topic: as a standalone moment of inspiration and reflection, or as the first step toward something deeper.
+- **Masterclass** (Knowledge) · *The map.* It offers vocabulary, frameworks and the relational space to start working with the material, together, as a group. Knowledge that in the end belongs to the participants and opens new possibilities.
+- **Training** (Application) · *The practice.* Skills meet real contexts. What stays with participants is a different way of standing inside their everyday challenges. It is a classic training, an experience the team goes through together, a Socratic Dialogue, a test of reality.
+- **Learning-on-the-job** (Legacy) · *Long-lasting impact.* Action and reflection come together to deliver learning-on-the-job programmes, where everything weaves together: tailored goals meet processes, methods and room to learn. Today meets tomorrow.
+
+## Newsletter
+
+"Notes from the field": occasional writing on pattern, practice, and public work. Double opt-in, unsubscribe any time. Signup is on https://dandy-lions.vercel.app/en/insights.
+
+## Related
+
+- Educational Events and topics: `offerings/educational-events.md`
+- Field notes (articles): `articles.md`
+
+===== FILE: sources/offerings/educational-events.md =====
+
+# Educational Events and Learning on the Job
+
+Source: live site https://dandy-lions.vercel.app/en/insights/learning (seeded from `reference/copy.json` in rbijkercom/dandy-lions). Status: published. Quote verbatim; do not add facts.
+
+Part of: Insights (Clarity).
+
+## Headline
+
+What we call relational problems are often the frictions a person carries within and acts out in a system.
+
+Five topics, each offered in three depths. A keynote opens the question, a masterclass gives it vocabulary and frameworks, a training puts it to work in real contexts. Choose a topic and the format that fits where your team stands.
+
+## Formats
+
+- **Keynote** (Inspiration) · *The spark.* It inspires, gives something a name, opens a question that can no longer be unasked. It is the entry point to every topic: as a standalone moment of inspiration and reflection, or as the first step toward something deeper.
+- **Masterclass** (Knowledge) · *The map.* It offers vocabulary, frameworks and the relational space to start working with the material, together, as a group. Knowledge that in the end belongs to the participants and opens new possibilities.
+- **Training** (Application) · *The practice.* Skills meet real contexts. What stays with participants is a different way of standing inside their everyday challenges. It is a classic training, an experience the team goes through together, a Socratic Dialogue, a test of reality.
+- **Learning-on-the-job** (Legacy) · *Long-lasting impact.* Action and reflection come together to deliver learning-on-the-job programmes, where everything weaves together: tailored goals meet processes, methods and room to learn. Today meets tomorrow.
+
+## Topics
+
+Note: the live site labels the fourth topic "Topic 05" as well as the fifth. Do not copy the numbering into posts; refer to topics by name. [TO BE CONFIRMED BY RUBEN: correct numbering.]
+
+### The weaver mind
+
+*Topic 01 · Cognition & complexity*
+
+For decades we’ve taught people to work like spiders: to use the thread to isolate, to capture, to build clean, precise structures. Spider silk is one of the strongest materials we know. But on its own, it isn’t enough for the complexity we live in today.
+
+The weaver’s mind isn’t a replacement. It’s what makes the web worth spinning in the first place — weaving ideas, emotions, systems and contradictions into something that holds. Where the spider asks “did I get it right?”, the weaver asks “which threads weave into something stronger?”
+
+This theme introduces that shift: an intellectual provocation in the keynote, a body of knowledge in the masterclass, a lived discipline in the training.
+
+### Identity & personal boundaries
+
+*Topic 02 · Identity & authority*
+
+Every person carries a tension rarely named: between what they feel themselves to be, and what they show, concede, protect. Personal boundaries are the edges of one’s own individuality — the limits of what we call “I”.
+
+When these boundaries are clear, our relationship with ourselves and with others makes sense. When they stay undefined or go ignored, people adapt, give in, shrink, or harden.
+
+This theme explores that threshold — not to rigidify it, but to make it livable: helping people recognize needs, wants, expectations and obligations, and to say yes and no from that clarity.
+
+The keynote names the dynamic. The masterclass maps it. The training builds the practice of living from a rooted, acknowledged sense of self.
+
+### Functioning systems & systemic boundaries
+
+*Topic 03 · Systems & organisation*
+
+We’ve inherited a model built on authority: power flowing from the top, decisions made at the summit, a system managed from the outside. It’s legible, familiar — and increasingly insufficient for today’s complexity.
+
+There’s another way to understand how systems organize: not through hierarchy, but through the dynamic interaction of their parts, where meaning and coherence emerge from relationship, not command.
+
+The keynote opens the vision. The masterclass builds the diagnostic capacity. The training puts both to work in participants’ real systems.
+
+### (Neuro)diversity & Inclusion
+
+*Topic 05 · Differences and relations*
+
+Some environments aren’t built for the minds that inhabit them. Through no one’s fault: where a workplace can’t hold complexity, people learn to shrink — to adapt, to give in, to fold themselves into shapes that were never theirs.
+
+We start from an observation as simple as it is new: inclusion costs most to those who benefit from it least. When it doesn’t, what we’ve built isn’t inclusion but a more polite form of disappearing: assimilation.
+
+The keynote challenges the status quo. The masterclass invites us to build environments and selves strong enough to hold what’s really there. The training is the chance to feel it on your own skin.
+
+### Learning on the job
+
+*Topic 05 · Learning on the job*
+
+I guide teams through that process as it happens. Together we develop the policy with the Policy Compass, Opgavegericht werken and the Pattern Weaver Approach.
+
+Doing and learning run side by side through both frontal and experiential learning that is immediately integrated and applied into your own policy.
+
+What remains afterwards is a not only solid work, but also a team that knows how it got there and has the capability to do it again autonomously.
+
+## Upcoming events
+
+[TO BE SUPPLIED BY RUBEN: dates, times, venues or online links, and registration links. Never invent event details.]
+
+===== FILE: sources/offerings/consulting.md =====
+
+# Consulting (Impact) and Team Alignment
+
+Source: live site https://dandy-lions.vercel.app/en/consulting (seeded from `reference/copy.json` in rbijkercom/dandy-lions). Status: published. Quote verbatim; do not add facts.
+
+Theme: Inverted (sage). Word: **Impact**. Role: Project/Programme manager & consultant.
+
+## Consulting home
+
+**What do we do about it?**
+
+We help people and organisations navigate complexity, withstand tension and explore new horizons, with clarity and momentum.
+
+*The way of working*: All DandyLions assignments are structured from the same attention and care for clarity, direction and momentum. We help you resolve technical tensions, and to learn how to sustain adaptive ones, so that you can grow.
+
+- **Ready → Clarity**: Positioning yourself in the eye of the storm to watch the tempest with calm. Knowing how you are oriented and where you are headed.
+- **Set → Direction**: Creating a new goal, something that was not there before. Anchoring desires in reality and asking what truly adds value, now.
+- **Go → Momentum**: Aligning thought, word and action. Seizing opportunities and removing the obstacles to growth. Building a legacy that lasts over time.
+
+## Services
+
+| Service | Page | Source file |
+| --- | --- | --- |
+| Team Alignment | https://dandy-lions.vercel.app/en/consulting (no separate page; the Consulting home is the Team Alignment entry) | this file |
+| Project Coaching | https://dandy-lions.vercel.app/en/consulting/project-coaching | `offerings/project-coaching.md` |
+| Policy Compass | https://dandy-lions.vercel.app/en/consulting/policy-compass | `offerings/policy-compass.md` |
+| Collaborative Kitchen | https://dandy-lions.vercel.app/en/consulting/collaborative-kitchen | `offerings/collaborative-kitchen.md` |
+| The Story Beneath | https://dandy-lions.vercel.app/en/consulting/story | `offerings/the-story-beneath.md` |
+| Pattern Weaver Approach (the method behind the work) | https://dandy-lions.vercel.app/en/consulting/method | `offerings/pattern-weaver-approach.md` |
+
+## Team Alignment
+
+Team Alignment is listed in the Consulting services menu, but it has no page of its own yet. Use only the Consulting home copy above when writing about it.
+
+[TO BE SUPPLIED BY RUBEN: Team Alignment description, who it's for, how it works.]
+
+===== FILE: sources/offerings/project-coaching.md =====
+
+# Project Coaching
+
+Source: live site https://dandy-lions.vercel.app/en/consulting/project-coaching (seeded from `reference/copy.json` in rbijkercom/dandy-lions). Status: published. Quote verbatim; do not add facts.
+
+Part of: Consulting (Impact).
+
+## Headline
+
+Your project doesn't need another framework. It needs someone in your corner.
+
+You already know the theory. What you're actually facing is a stakeholder who keeps changing their mind, a scope that has quietly doubled, and a delivery date nobody believes in anymore. Project coaching gives you a thinking partner who works on your live project — not a case study from a textbook.
+
+## What project coaching is — and what it isn't
+
+- **It isn't training.** You're not sitting through a curriculum. We start with whatever landed in your inbox this morning.
+- **It isn't consulting.** I don't take the work off your desk or hand you my plan. In coaching, you hold the answers — my job is to help you find and act on them, so the capability stays with you after the engagement ends.
+- **It is a structured, confidential space** to pressure-test decisions, rehearse difficult conversations, and get honest feedback on your stakeholder email before you send it.
+
+## Who it's for
+
+- New project managers who inherited the title along with the workload, and are learning on a live project
+- Experienced PMs carrying something unusually complex, political, or high-stakes
+- Accidental project leaders: specialists who want or need to approach an assignment as a project.
+- Project managers working alone who feel the would benefit from a professional sparring partner.
+- Organisations who want to build delivery capability internally rather than hire it in every time
+
+## What we can work on
+
+- Building a golden duo with your sponsor
+- Steering without power
+- Setting up decision-making
+- Conveying urgency and risk so that it lands
+- How to deal with the adaptive characteristics of your project
+- Analyzing the primary task, anxieties and boundary disruptions within your project environment
+- Protecting your own capacity and avoiding burnout
+
+## How it works
+
+1. **Intake**: We talk through where you are, what's stuck, and whether I'm the right fit.
+2. **Goal setting**: We agree on two or three concrete outcomes for the engagement.
+3. **Tailored pace**: One-to-one sessions built around your urgencies, deliverables and milestones.
+4. **Review**: We check the outcomes, what you learned and what new questions arose.
+
+## Common questions
+
+**Do I need a certification to work with you?**
+No. Plenty of my clients are running significant projects without PMP, PMI, PRINCE2, IPMA, or any formal qualification.
+
+**Can you help with a project that's already failing?**
+Yes — that's often when the call comes. We'd focus first on stabilising the situation and rebuilding trust with your stakeholders.
+
+**How long do people usually work with you?**
+Most engagements run three to six months. Some clients come back for a single session before a major milestone.
+
+===== FILE: sources/offerings/policy-compass.md =====
+
+# Policy Compass
+
+Source: live site https://dandy-lions.vercel.app/en/consulting/policy-compass (seeded from `reference/copy.json` in rbijkercom/dandy-lions). Status: published. Quote verbatim; do not add facts.
+
+Part of: Consulting (Impact).
+
+## Headline
+
+Your work has already expertise. Now it needs someone who can contain the tension of complexity.
+
+Some executive decisions are expensive to undo. The aim is to translate an abstract ambition into work a team can actually do, together with stakeholders. The Policy Compass is an instrument developed by the Dutch government to develop effective, applicable and human policies.
+
+## Why this method
+
+- The Policy Compass was designed for the most heavily scrutinised decisions there are: the kind that face formal internal challenge, public consultation, and questions in parliament. Its discipline is deliberately unglamorous. Establish the problem before the goal, the goal before the options, the options before the choice, with the question of who has a stake running through every one of those steps.
+- That discipline isn't specialised knowledge. It's the thing that quietly disappears the moment a decision becomes urgent or political, in any organisation. Which is exactly why it holds up outside the context it was built for.
+
+## The gap between the method and the practice
+
+- The first independent evaluation of the Policy Compass found that the method is still applied relatively little, and often not in the way it was intended. Where it gets used as a form-filling exercise after the fact, the people involved tend to experience it as pointless and as an administrative burden.
+- That's the trap, and it isn't unique to any one organisation. A required justification gets written once. If the choice of instrument sits before the analysis, that justification is by definition a reconstruction after the fact, and everyone in the room knows it. The fix isn't a better template. It's someone whose job it is to run the process in the order it was designed to run.
+
+## What this is, and what it isn't
+
+- **This is what it is for.** When the analysis genuinely precedes the choices, when the people involved take part, when the problem is contested, when more than one organisation or domain has to move.
+- **It isn't compulsory fare.** It asks for thinking room to pick more than just the low-hanging fruit, and for the ability to carry tension productively for as long as there are no solutions.
+- **The value sits at the front.** Designing the process, convening the right stakeholders, keeping the analysis honest while the pressure to name a solution builds, and translating a mission into something a team can work on week by week.
+
+## Four reasons (not) to use the Policy Compass
+
+**“We already know the solution.”**
+In high stakes environments, urgency drives change. Most solutions are known before problems have a chance to be researched. The issue is not that organizations do not have solutions; it's that they often do not know what causes their problems.
+
+**“A project leader is overhead.”**
+A project manager is the cheapest and the most valuable at day one. In complex environments someone has to hold the tension while the analysis runs.
+
+**“We can do this ourselves.”**
+Any expert in their field has a clear idea of how to solve a problem. That knowledge is not the issue. The issue is that each knows only from their own perspective. Bringing in an external manager can mean the difference between implementing solutions and fighting symptoms.
+
+**“We don't have time.”**
+Time at the front is the cheapest time in the entire process, and skipping it is the best-documented way to extend the total lead time. A rushed preparation produces repair costs, missed opportunities, and relationships that harden.
+
+## Who it's for
+
+- Organisations facing a decision that will be hard to reverse: a scheme, a regulation, an investment, a redesigned service
+- Directors and executives carrying a mission that doesn't sit neatly inside one department, one organisation, or one budget
+- Partnerships, regions, and alliances where nobody has authority over everybody and the work still has to move
+- Anyone handed a charged decision and no project structure to run it with
+
+## What we can work on
+
+- Holding the analysis open while the room pushes for a solution
+- A problem definition that starts by the causes
+- Genuinely weighing more than one option, including the uncomfortable ones
+- Stakeholder mapping and co-creation that isn't a formality
+- Working in short cycles towards clear interim results
+- Translating an abstract mission into concrete work, roles, and rhythm
+
+## How it works
+
+1. **Opening conversation**: Preferably before anything is fixed. We map what's actually being asked, who has decided what already, and what still has room to move. This is the most valuable conversation in the whole process.
+2. **Framing the mission**: A mission is not an assignment. An assignment specifies the outcome; a mission sets a direction and leaves the result open. Getting that framing right determines who needs to be at the table and what counts as success.
+3. **Setting up and running the project**: Problem, intended goal, options, consequences, preferred option, with the stakeholder question running through all of them rather than bolted on at the end.
+4. **Handover**: The point isn't that I stay. We agree from the start what has to be transferred, to whom, and by when, so that your organisation keeps the working method after the project closes.
+
+## Common questions
+
+**Do we have to use the Policy Compass?**
+Following the Policy Compass is always a choice. Underneath it sit project management methods, as in any other project.
+
+**We've already started. Is it too late?**
+Maybe. What we can do is establish honestly what's still open and what has already been decided, and then decide whether the remaining room is worth a structured process.
+
+**When is a project task-driven?**
+A task sets a direction while the outcome stays open. A project delivers an agreed result. A task-driven project promises that the process will produce solutions that contribute to the task, with the outcome not determined in advance.
+
+===== FILE: sources/offerings/collaborative-kitchen.md =====
+
+# Collaborative Kitchen
+
+Source: live site https://dandy-lions.vercel.app/en/consulting/collaborative-kitchen (seeded from `reference/copy.json` in rbijkercom/dandy-lions). Status: published. Quote verbatim; do not add facts.
+
+Part of: Consulting (Impact).
+
+## Headline
+
+Collaborative Kitchen
+
+Organisational challenges today are complex, with no obvious owner and no simple solution.
+
+## Quote used on the page
+
+> The most common cause of failure in leadership is produced by treating adaptive challenges as if they were technical problems
+>
+> — Ronald Heifetz
+
+We have learned that taking teams out of their meeting rooms helps them find a new relationship with the challenges they are facing. Our Collaborative Kitchen experiences strengthen self-insight and collaboration across boundaries, and create space for breakthrough thinking.
+
+- Working with their hands, away from the usual agendas and procedures, shifts their perspective and sparks new ideas and possibilities.
+- We jointly craft the recipe: a baking programme tailored to your team.
+
+## Cards
+
+- We offer crafted baking experiences where your team works with its hands and creates something together, tailored to the specific team's needs.
+- We recognise that every team's context is different, from its professional domain and stakeholders to its mandate and organizational pressures. That's why every engagement is a tailor-made Collaborative Kitchen experience.
+
+## In action
+
+- During these experiences, we consciously work on how the team operates as a whole. We look at the group's dynamics and behaviour as they unfold around the workbench, and we coach the team in action.
+- Baking mirrors the work itself: some steps are technical and follow the recipe, while others are adaptive and call for tasting, adjusting and trusting one another.
+
+## Who it's for
+
+- Project teams working on problems that cross organisational boundaries and have no single owner
+- Leadership teams that need to rebuild trust before the next difficult decision
+- Groups whose collaboration has become procedural rather than genuine
+- Programmes where technical fixes keep being applied to adaptive challenges
+
+## What we can work on
+
+- Telling the difference between technical problems and adaptive challenges
+- Trust and collaboration across organisational boundaries
+- How the group behaves under pressure, observed as it happens
+- Making space for breakthrough thinking away from the usual agendas
+- Tasting, adjusting and relying on one another instead of following the recipe
+
+## How it works
+
+1. **Intake**: We map the team's context, its mandate and the stakeholders around it, and what it is currently stuck on.
+2. **Crafting the recipe**: We jointly craft the recipe: a baking programme tailored to your team and what it needs.
+3. **The kitchen**: Working with their hands, away from the usual agendas and procedures, shifts their perspective and sparks new ideas and possibilities.
+4. **Reflection**: We look back at the dynamics around the workbench and translate them into the team's own work.
+
+## Common questions
+
+**Do we need to know how to bake?**
+No. The baking is the medium, not the goal. Everything the team needs is taught on the day.
+
+**Why baking?**
+Baking mirrors the work itself: some steps are technical and follow the recipe, while others are adaptive and call for tasting, adjusting and trusting one another.
+
+**What is the goal?**
+During these experiences, we consciously work on how the team operates as a whole. We look at the group's dynamics and behaviour as they unfold around the workbench, and we coach the team in action.
+
+===== FILE: sources/offerings/the-story-beneath.md =====
+
+# The Story Beneath
+
+Source: live site https://dandy-lions.vercel.app/en/consulting/story (seeded from `reference/copy.json` in rbijkercom/dandy-lions). Status: published. Quote verbatim; do not add facts.
+
+Part of: Consulting (Impact).
+
+## Headline
+
+Every team under pressure tells itself a story. The one that shapes the work is rarely told out loud.
+
+Under high stakes, uncertainty or restructuring, tension is turned into stories: about who is to blame, who carries the load and how it will end. Left unexamined, these stories surface as passive resistance, scapegoating, cynicism or groupthink. The Story Beneath brings them to light and offers teams a safe space to examine them, adjust how they work together, and restore authority and alignment.
+
+## Who it's for
+
+- Executive teams carrying high stakes, where the confidence in the boardroom no longer matches what is said in the corridor
+- Project teams under pressure, where project managers, PMO and technical leads have started to see each other as the problem
+- Teams in the middle of a restructuring, merger or change of direction
+- Sponsors and leaders who sense a gap between the official story and what people actually believe
+
+## What we can work on
+
+- The gap between the official story and the story beneath it
+- Who is cast as hero, villain, martyr or invisible worker, and what that casting protects the team from
+- The anxieties driving the team's current narrative
+- Blurred role boundaries between executives, project managers and support roles
+- Reconnecting the team to its primary task
+- Agreements on how to communicate when pressure rises again
+
+## How it works
+
+1. **Intake**: We map the team's context, the stakes and the question it is facing.
+2. **Narrative audit**: Confidential storytelling interviews across the hierarchy reveal the stories that shape the work.
+3. **The narrative mirror**: In a workshop, we reflect those stories back to the team in anonymised form and hold the space to look at them together.
+4. **The next chapter**: We translate what surfaced into clearer roles, a sharper shared task and agreements for the next phase.
+
+## Common questions
+
+**Will what people tell you stay confidential?**
+Yes. Everything stays within the team. However, the team works with real fantasies, patterns, characters and themes, not abstract fiction.
+
+**Is this a form of therapy?**
+No. The work draws on systems psychodynamics and narrative approaches, but its focus is the team, its roles and its task.
+
+**Does it work for both executive and project teams?**
+Yes. The stories differ, and so does the focus, but the method is the same: surface the narrative, examine it together, and rewrite the next chapter.
+
+===== FILE: sources/offerings/pattern-weaver-approach.md =====
+
+# Pattern Weaver Approach
+
+Source: live site https://dandy-lions.vercel.app/en/consulting/method (seeded from `reference/copy.json` in rbijkercom/dandy-lions). Status: published. Quote verbatim; do not add facts.
+
+The method behind DandyLions' consulting work. Tabs on the page: Types of problems · Where we come in · Four competing loyalties · Shifting gears.
+
+## Opening
+
+Decisions that shape society, and the strategies that shape organisations, often lack the impact their makers desire, because the system was built for different problems and a different relationship with citizens, customers and decision-makers.
+
+It also rests on an outdated idea of what it means to be a professional, in public service and in business alike.
+
+This isn't a reform agenda but a cognitive and relational shift. It is expressed in the language, challenges and responsibilities of public, societal and commercial work.
+
+Pull quotes:
+- "Technical and adaptive problems are two gears every project manager must master."
+- "Let's see how DandyLions can help you navigate this complexity."
+
+## Types of Problems
+
+For adaptive work to run in parallel with technical work, it is important to know the distinctive features of both types of problems and the approach each one requires.
+
+### Technical Problems
+
+- Arise in complicated systems, where cause and effect are linear, knowable, and can be analyzed upfront. The focus is on execution through a well-defined plan, proven solutions, and clearly defined deliverables, milestones, and acceptance criteria.
+- The project manager applies expertise, established processes, and formal authority over scope, schedule, and resources, following a sense–analyze–respond approach grounded in good practice.
+
+Short form: sense – analyze – respond.
+
+### Adaptive Problems
+
+- Arise in complex systems, where cause and effect are non-linear, interdependent, and often only clear in hindsight. The focus is on shaping and aligning direction by probing unclear challenges, running safe-to-fail experiments, and building feedback loops that move stakeholders toward a shared outcome.
+- The project manager needs to exercise influence without formal authority, leading and following peers and stakeholders and letting solutions emerge through a probe–sense–respond approach grounded in emergent practice.
+
+Short form: probe – sense – respond.
+
+## Where We Come In
+
+- Most project teams struggle to surface, address, and organize around adaptive problems, which can't be solved by expertise alone and require team members and stakeholders to lead each other across boundaries.
+- We bring our expertise to help project managers balance technical control with adaptive capacity, knowing when to plan and govern and when to probe, sense, and let solutions emerge.
+- We help in building capacity that addresses both systemic and individual challenges at once, beyond specialization.
+- Tomorrow's professional needs the capacity to hold complexity without flattening it, to bring the right people into the right process, and to build solutions that key stakeholders understand — and consent to, even when they disagree.
+
+### What gets in the way of adaptive work?
+
+- Competing loyalties are the biggest challenge a project manager faces when taking on adaptive problems, in government and in business alike. Every project sits inside a system of four loyalties that pull in different directions, and each one rewards a technical approach: a clear plan, a fixed process, and predictable outcomes.
+- Under that pressure, project managers may hold back from surfacing tensions or giving feedback for fear of exposing the minister, bypassing the line, or stepping outside their legal mandate.
+- This directly affects project outcomes. It dampens the feedback loops the system needs to learn and adapt, and it turns complex problems into complicated ones on paper while they remain complex in reality.
+
+## Four Competing Loyalties
+
+Competing loyalties are the biggest challenge a project manager faces when taking on adaptive problems, in government and in business alike. Every project sits inside a system of four loyalties that pull in different directions, and each one rewards a technical approach: a clear plan, a fixed process, and predictable outcomes.
+
+### Loyalty to the Executive Top
+
+The minister answers to parliament for everything officials do, just as a board answers to shareholders for everything the company does. Knowing this, people try to prevent errors and steer clear of risk wherever they can.
+
+Seen from here, a safe-to-fail experiment looks like a political or reputational liability, so the project plan becomes a shield rather than a hypothesis to be tested.
+
+### Loyalty to the End Users
+
+The civil service oath commits officials to the general interest of society; a company makes a comparable promise to the customers it serves. Both ask you to treat people fairly, equally, and respectfully.
+
+Citizens and customers are exactly where adaptive problems surface: messy, individual, and non-linear. When the plan and their reality diverge, the plan usually wins.
+
+### Loyalty to the Direct Manager
+
+Anything headed for parliament, or for the board, must first be approved by successive layers of management.
+
+Each layer acts as a filter that simplifies, standardizes, and smooths out dissent. It is a hierarchy built for control rather than for learning.
+
+### Loyalty to the Law and Governance
+
+The same oath binds officials to the law, legal principles, and their codes of conduct; in a company the equivalent is governance, compliance, and internal policy.
+
+Both are by design technical instruments: codified, general, and stable. When an adaptive problem meets a rigid rule, the rule wins and the person loses. In the childcare benefits scandal, the law lacked a hardship provision and the legislator gave far too little weight to proportionality.
+
+## Shifting gears
+
+- In the adaptive space, we want the project managers we coach to hold these loyalties consciously rather than letting them default to the path of least resistance. They will engage with their teams and stakeholders, promote dialogue and loyal dissent, and become more accessible to the team.
+- They will learn to diagnose which type of problem they are facing and shift gears accordingly. That way they strike the right balance between technical control and adaptive capacity, serving minister or shareholder, citizen or customer, line, and law or governance, while addressing the challenges the system presents instead of avoiding them.
+
+===== FILE: sources/articles.md =====
+
+# Field notes: blogs and articles
+
+Source: live site https://dandy-lions.vercel.app/en/insights/articles (seeded from `reference/copy.json` in rbijkercom/dandy-lions). Status: published. Quote verbatim; do not add facts.
+
+Section name: "Field notes". Lede: "Short pieces written between engagements. Anyone deciding whether to book, and anyone who would rather read first than ask."
+
+Only the title, type, one-line dek and image description are published. The essays themselves are not written yet. When posting about an article, use only the dek; do not write or summarise an essay body that does not exist.
+
+## Power without a throne
+
+- Type: Essay
+- URL: https://dandy-lions.vercel.app/en/insights/articles/power-without-a-throne
+- Dek: Authority looks like position. Most of the time it is permission: granted quietly, and withdrawn the same way.
+- Image: A pale chess king standing between two rows of pawns
+- Full text: [TO BE SUPPLIED BY RUBEN. The live page says "This page is taking shape."]
+
+## Standing on the line
+
+- Type: Essay
+- URL: https://dandy-lions.vercel.app/en/insights/articles/standing-on-the-line
+- Dek: A boundary is not a wall. It is the place where you can still be reached and still be yourself.
+- Image: Two boots standing astride a painted yellow line on asphalt
+- Full text: [TO BE SUPPLIED BY RUBEN. The live page says "This page is taking shape."]
+
+## The one who speaks first
+
+- Type: Note
+- URL: https://dandy-lions.vercel.app/en/insights/articles/the-one-who-speaks-first
+- Dek: What a team settles in its opening minute usually decides the rest of the meeting.
+- Image: Wooden figures in a circle around a single red one
+- Full text: [TO BE SUPPLIED BY RUBEN. The live page says "This page is taking shape."]
+
+## Lines that hold sand
+
+- Type: Essay
+- URL: https://dandy-lions.vercel.app/en/insights/articles/lines-that-hold-sand
+- Dek: Some structures do not stop the drift. They slow it long enough for something to take root.
+- Image: A low fence of wooden posts crossing an open beach
+- Full text: [TO BE SUPPLIED BY RUBEN. The live page says "This page is taking shape."]
+
+## What holds a system up
+
+- Type: Note
+- URL: https://dandy-lions.vercel.app/en/insights/articles/what-holds-a-system-up
+- Dek: Look past the hierarchy chart: coherence lives in the joints, where the parts carry each other.
+- Image: A lattice of metal beams meeting at bolted joints
+- Full text: [TO BE SUPPLIED BY RUBEN. The live page says "This page is taking shape."]
+
+===== FILE: sources/linkedin/README.md =====
+
+# LinkedIn
+
+How to write a DandyLions LinkedIn post. Visual formats are in [design-system/social-formats.md](../../design-system/social-formats.md); voice is in [voice/voice-and-tone.md](../../voice/voice-and-tone.md).
+
+## Who posts
+
+[TO BE SUPPLIED BY RUBEN: whether posts go out from Fabio's personal profile, the DandyLions company page, or both, and the profile URLs.]
+
+Default: a personal post speaks as Fabio ("I"); a company-page post speaks as DandyLions ("we").
+
+## Post shapes
+
+1. **Field observation** (Insights). Open with a concrete moment or tension, name the pattern, end with one quiet line. Sources: `articles.md`, `offerings/educational-events.md`, `offerings/pattern-weaver-approach.md`.
+2. **Service highlight** (Consulting). Name who it's for, the problem in their words, and how it works in steps. Sources: `offerings/*.md`.
+3. **Idea explainer**. One concept per post: technical vs adaptive problems, the four competing loyalties, Ready/Set/Go, a mission is not an assignment. Source: `offerings/pattern-weaver-approach.md`, `offerings/policy-compass.md`.
+4. **Event invitation**. Topic, format (keynote, masterclass, training), and the details. Event details must come from Ruben; otherwise leave them as [Date], [Time], [Venue / online], [Registration link].
+5. **Article share**. The title, the dek, one line of context, and the link. Don't write or summarise an essay body; the essays aren't published yet.
+6. **Testimonial**. A verbatim quote from `about.md` with its exact attribution.
+
+## Writing rules
+
+- The first two lines carry the post: roughly 200 characters show before "see more".
+- Short paragraphs of one to three sentences. Plain line breaks, no bullet walls.
+- 120–250 words is a good range. The limit is 3,000 characters.
+- End with an invitation, not a hard sell. The site's call to action is "Begin the conversation"; the link is https://dandy-lions.vercel.app/en/contact (or `/it/contact`, `/nl/contact`).
+- No exclamation marks. Hashtags and emoji: [TO BE SUPPLIED BY RUBEN: policy]. Until then, use none.
+- Give the visual a template name from `social-formats.md` (for example "LI Post 01: Insight quote") and the line of copy that goes on it.
+
+## Approved posts
+
+[TO BE SUPPLIED BY RUBEN: published or approved LinkedIn posts, one file each, named `YYYY-MM-DD-short-title.md`, using [post-template.md](post-template.md). None yet.]
+
+===== FILE: sources/linkedin/post-template.md =====
+
+# LinkedIn post template
+
+Copy this structure when drafting a post. Every factual line must trace back to a file in `sources/`.
+
+```
+Language: EN | IT | NL
+Speaker: Fabio (I) | DandyLions (we)
+Half: Insights (Clarity) | Consulting (Impact)
+Shape: field observation | service highlight | idea explainer | event | article share | testimonial
+Sources used: sources/... (list every file)
+
+--- POST ---
+[Hook: one or two lines, under ~200 characters, a concrete tension or question]
+
+[Body: two to four short paragraphs]
+
+[Close: one quiet line, plus an invitation such as "Begin the conversation" and a link]
+
+--- VISUAL ---
+Template: LI Post 01 / 02 / 03, LI Link 01 / 02 (see design-system/social-formats.md)
+Theme: Light (ivory) | Inverted (sage)
+On-image text: [the exact line, quoted from sources]
+Photo: [description] or none
+
+--- GAPS ---
+[Anything missing, written as TO BE SUPPLIED BY RUBEN: ...]
+```
+
+===== FILE: sources/instagram/README.md =====
+
+# Instagram
+
+How to write a DandyLions Instagram post. Visual formats are in [design-system/social-formats.md](../../design-system/social-formats.md); voice is in [voice/voice-and-tone.md](../../voice/voice-and-tone.md).
+
+## Account
+
+[TO BE SUPPLIED BY RUBEN: the Instagram handle and whether it speaks as Fabio or as DandyLions.]
+
+## Post shapes
+
+1. **Single post (1080 × 1080)**: one line that stands on its own: an archetype (the dandelion, the lion, the dandy), the Legacy line, a track-record figure, a short quote. Templates IG Post 01–03.
+2. **Carousel (1080 × 1350, 4 slides)**: one idea in steps. The pack has "Technical & adaptive problems": cover, technical, adaptive, "where we come in". The same shape works for the four competing loyalties, Ready/Set/Go, or a service's four "How it works" steps.
+3. **Story (1080 × 1920)**: Ready/Set/Go, or an event with a registration link sticker.
+
+## Writing rules
+
+- The image carries the idea; the caption adds context. Keep on-image text to a single quoted line or a few words per slide.
+- Caption: the first ~125 characters show before "more". 40–150 words is a good range; the limit is 2,200 characters.
+- Plain, calm sentences. No exclamation marks. Hashtags and emoji: [TO BE SUPPLIED BY RUBEN: policy]. Until then, use none.
+- Links in captions aren't clickable; say "link in bio" only if Ruben confirms the bio link. [TO BE SUPPLIED BY RUBEN: bio link.]
+- For each slide, give the template name, the theme and the exact on-image text.
+
+## Approved posts
+
+[TO BE SUPPLIED BY RUBEN: published or approved Instagram posts, one file each, named `YYYY-MM-DD-short-title.md`, using [post-template.md](post-template.md). None yet.]
+
+===== FILE: sources/instagram/post-template.md =====
+
+# Instagram post template
+
+Copy this structure when drafting a post. Every factual line must trace back to a file in `sources/`.
+
+```
+Language: EN | IT | NL
+Format: single post | carousel (n slides) | story
+Half: Insights (Clarity) | Consulting (Impact)
+Sources used: sources/... (list every file)
+
+--- SLIDES ---
+1. Template: IG Post 01 / Carousel 1/4 / Story 01 ... | Theme: Light | Inverted
+   On-image text: "[exact line from sources]"
+2. ...
+
+--- CAPTION ---
+[First line under ~125 characters]
+
+[One or two short paragraphs]
+
+[Quiet close or invitation]
+
+--- GAPS ---
+[Anything missing, written as TO BE SUPPLIED BY RUBEN: ...]
+```

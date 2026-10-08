@@ -1,0 +1,39 @@
+# DandyLions hub
+
+> Single source of truth for DandyLions (founder Fabio Bortolazzi): design system, voice and published source material for LinkedIn and Instagram content. Read-only reference maintained by Ruben Bijker. Never invent facts or quotes; gaps are marked [TO BE SUPPLIED BY RUBEN: ...].
+
+Everything in one file: https://rbijkercom.github.io/dandylions-hub/llms-full.txt
+
+## Start here
+
+- [README.md](https://rbijkercom.github.io/dandylions-hub/README.html): What the hub is and its rules
+- [project-instructions.md](https://rbijkercom.github.io/dandylions-hub/project-instructions.html): Instructions for Claude: sources, voice, LinkedIn and Instagram, output format
+
+## Voice
+
+- [voice/voice-and-tone.md](https://rbijkercom.github.io/dandylions-hub/voice/voice-and-tone.html): Who speaks (I vs we), tone, vocabulary, style rules
+- [voice/multilingual-glossary.md](https://rbijkercom.github.io/dandylions-hub/voice/multilingual-glossary.html): Official EN / IT / NL terms
+
+## Design system
+
+- [design-system/brand-rules.md](https://rbijkercom.github.io/dandylions-hub/design-system/brand-rules.html): Name, tagline, logo and lion mark, graphic devices, imagery, do and don't
+- [design-system/social-formats.md](https://rbijkercom.github.io/dandylions-hub/design-system/social-formats.html): LinkedIn and Instagram sizes, safe zones, Figma templates
+- [design-system/tokens.json](https://rbijkercom.github.io/dandylions-hub/design-system/tokens.json): Colours, themes, typography, spacing, radius, grain
+
+## Sources
+
+- [sources/README.md](https://rbijkercom.github.io/dandylions-hub/sources/README.html): What each source holds and its status; placeholder rules
+- [sources/about.md](https://rbijkercom.github.io/dandylions-hub/sources/about.html): Fabio, archetypes, vision and mission, track record, testimonials, contact
+- [sources/offerings/insights.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/insights.html): Insights (Clarity): formats and newsletter
+- [sources/offerings/educational-events.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/educational-events.html): Educational Events: five topics
+- [sources/offerings/consulting.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/consulting.html): Consulting (Impact): Ready/Set/Go, services, Team Alignment
+- [sources/offerings/project-coaching.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/project-coaching.html): Project Coaching
+- [sources/offerings/policy-compass.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/policy-compass.html): Policy Compass
+- [sources/offerings/collaborative-kitchen.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/collaborative-kitchen.html): Collaborative Kitchen
+- [sources/offerings/the-story-beneath.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/the-story-beneath.html): The Story Beneath
+- [sources/offerings/pattern-weaver-approach.md](https://rbijkercom.github.io/dandylions-hub/sources/offerings/pattern-weaver-approach.html): Pattern Weaver Approach: technical vs adaptive, four loyalties
+- [sources/articles.md](https://rbijkercom.github.io/dandylions-hub/sources/articles.html): Field notes: titles and deks
+- [sources/linkedin/README.md](https://rbijkercom.github.io/dandylions-hub/sources/linkedin/README.html): How to write LinkedIn posts
+- [sources/linkedin/post-template.md](https://rbijkercom.github.io/dandylions-hub/sources/linkedin/post-template.html): LinkedIn draft template
+- [sources/instagram/README.md](https://rbijkercom.github.io/dandylions-hub/sources/instagram/README.html): How to write Instagram posts
+- [sources/instagram/post-template.md](https://rbijkercom.github.io/dandylions-hub/sources/instagram/post-template.html): Instagram draft template

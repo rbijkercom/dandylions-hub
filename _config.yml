@@ -1,0 +1,13 @@
+title: DandyLions hub
+description: Single source of truth for DandyLions social content. Read-only reference.
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+relative_links:
+  enabled: true
+  collections: false
+exclude:
+  - scripts/

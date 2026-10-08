@@ -1,0 +1,520 @@
+@import 'tailwindcss';
+
+@source '../../';
+
+/*
+  DandyLions visual system from the Figma foundations.
+  Semantic roles inherit from [data-theme] on a container.
+  next/font sets --font-sans and --font-serif on <html>. Do not assign them here.
+*/
+
+@theme {
+  --color-ivory: #f5f2ec;
+  --color-sage: #748262;
+  --color-charcoal: #2d2d2d;
+  --color-gold: #907948;
+  --color-gold-deep: #7a663c;
+  --color-pale-sage: #c6cab9;
+  --color-control-fill: #e9e8df;
+  --color-control-border: #cfcec6;
+  --color-selected-sand: #c3c0a6;
+  --color-option-hover: #f1eee6;
+  --color-selector-border: #b0b3a5;
+  --color-card-surface: #fbf9f4;
+  --color-body-ink: #454340;
+  --color-card-border: #e3ddce;
+  --color-error: #9e3b2b;
+  --color-error-deep: #ff9f9f;
+  --color-sage-muted: #7c866d;
+  --color-wine: #632631;
+  --color-ochre: #aa8653;
+  --color-forest: #183930;
+
+  --radius-pill: 999px;
+  --radius-card: 12px;
+  --radius-field: 8px;
+  --radius-small: 4px;
+
+  --ease-brand: cubic-bezier(0.33, 0, 0.15, 1);
+  --max-width-content: 1312px;
+  --max-width-reading: 720px;
+  --max-width-measure: 720px;
+  --max-width-page: 1312px;
+}
+
+@theme inline {
+  --color-canvas: var(--surface-page);
+  --color-ink: var(--text-body);
+  --color-title: var(--text-primary);
+  --color-quiet: var(--text-dimmed);
+  --color-accent: var(--text-accent);
+  --color-brand: var(--brand-accent);
+  --color-panel: var(--surface-card);
+  --color-rule: var(--border-subtle);
+  --color-surface-page: var(--surface-page);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-card: var(--surface-card);
+  --color-surface-card-themed: var(--surface-card-themed);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-body: var(--text-body);
+  --color-text-dimmed: var(--text-dimmed);
+  --color-text-inverse: var(--text-inverse);
+  --color-text-accent: var(--text-accent);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-logo: var(--brand-logo);
+  --color-border-subtle: var(--border-subtle);
+  --color-border-control: var(--border-control);
+  --color-border-card: var(--border-card);
+  --color-border-card-themed: var(--border-card-themed);
+  --color-button-secondary-fill: var(--button-secondary-fill);
+  --color-button-secondary-hover-fill: var(--button-secondary-hover-fill);
+  --color-button-border: var(--button-border);
+  --color-button-pressed-fill: var(--button-pressed-fill);
+  --color-button-pressed-border: var(--button-pressed-border);
+  --color-field-fill: var(--field-fill);
+  --color-field-text: var(--field-text);
+  --color-field-placeholder: var(--field-placeholder);
+  --color-feedback-error: var(--feedback-error);
+  --color-feedback-error-border: var(--feedback-error-border);
+  --color-focus-ring: var(--focus-ring);
+  --color-selection-fill: var(--selection-fill);
+  --color-selection-text: var(--selection-text);
+  --color-selection-active-fill: var(--selection-active-fill);
+  --color-selection-hover-fill: var(--selection-hover-fill);
+  --color-selection-border: var(--selection-border);
+  --color-badge-icon: var(--badge-icon);
+  --animate-topic-acc-down: topic-acc-down 200ms var(--ease-brand);
+  --animate-topic-acc-up: topic-acc-up 200ms var(--ease-brand);
+}
+
+:root,
+[data-theme='light'],
+.tone-light {
+  --surface-page: #f5f2ec;
+  --surface-raised: #e9e8df;
+  --surface-card: #fbf9f4;
+  --surface-card-themed: #fbf9f4;
+  --text-primary: #2d2d2d;
+  --text-secondary: #454340;
+  --text-body: #454340;
+  --text-dimmed: rgb(45 45 45 / 75%);
+  --text-inverse: #f5f2ec;
+  --text-accent: #7a663c;
+  --brand-accent: #907948;
+  --brand-logo: #2d2d2d;
+  --border-subtle: #cfcec6;
+  --border-control: #2d2d2d;
+  --border-card: #e3ddce;
+  --border-card-themed: #e3ddce;
+  --button-secondary-fill: #e9e8df;
+  --button-secondary-hover-fill: #907948;
+  --button-border: #cfcec6;
+  --button-pressed-fill: #c3c0a6;
+  --button-pressed-border: #c3c0a6;
+  --field-fill: #f5f2ec;
+  --field-text: #2d2d2d;
+  --field-placeholder: rgb(45 45 45 / 75%);
+  --feedback-error: #9e3b2b;
+  --feedback-error-border: #9e3b2b;
+  --focus-ring: #2d2d2d;
+  --selection-fill: #c6cab9;
+  --selection-text: #2d2d2d;
+  --selection-active-fill: #c3c0a6;
+  --selection-hover-fill: #f1eee6;
+  --selection-border: #b0b3a5;
+  --shadow-hover: rgb(144 121 72 / 20%);
+  --shadow-card-themed: rgb(144 121 72 / 20%);
+  --badge-sage-muted: #7c866d;
+  --badge-wine: #632631;
+  --badge-ochre: #aa8653;
+  --badge-forest: #183930;
+  --badge-icon: #f5f2ec;
+  --shadow-hover-lift: 0 8px 16px var(--shadow-hover);
+}
+
+[data-theme='inverted'],
+.tone-sage {
+  --surface-page: #748262;
+  --surface-raised: #748262;
+  --surface-card: #fbf9f4;
+  --surface-card-themed: #748262;
+  --text-primary: #f5f2ec;
+  --text-secondary: #f5f2ec;
+  --text-body: #f5f2ec;
+  --text-dimmed: #f5f2ec;
+  --text-inverse: #2d2d2d;
+  --text-accent: #f5f2ec;
+  --brand-accent: #f5f2ec;
+  --brand-logo: #f5f2ec;
+  --border-subtle: rgb(245 242 236 / 35%);
+  --border-control: #f5f2ec;
+  --border-card: #e3ddce;
+  --border-card-themed: rgb(245 242 236 / 35%);
+  --button-secondary-fill: rgb(45 45 45 / 12%);
+  --button-secondary-hover-fill: #f5f2ec;
+  --button-border: rgb(245 242 236 / 35%);
+  --button-pressed-fill: #c3c0a6;
+  --button-pressed-border: #c3c0a6;
+  --field-fill: #748262;
+  --field-text: #f5f2ec;
+  --field-placeholder: #f5f2ec;
+  --feedback-error: #ff9f9f;
+  --feedback-error-border: #ff9f9f;
+  --focus-ring: #f5f2ec;
+  --selection-fill: #c6cab9;
+  --selection-text: #2d2d2d;
+  --selection-active-fill: #c3c0a6;
+  --selection-hover-fill: #f1eee6;
+  --selection-border: #b0b3a5;
+  --shadow-hover: rgb(144 121 72 / 20%);
+  --shadow-card-themed: rgb(45 45 45 / 0%);
+  --badge-sage-muted: #7c866d;
+  --badge-wine: #632631;
+  --badge-ochre: #aa8653;
+  --badge-forest: #183930;
+  --badge-icon: #f5f2ec;
+  --shadow-hover-lift: 0 8px 16px var(--shadow-hover);
+}
+
+:root {
+  --page-margin: 24px;
+  --grid-gutter: 16px;
+  --section-gap: 96px;
+  --space-120: 120px;
+  /* 25% of --space-120 / HeroBand py-16; full value from 768px up. */
+  --page-intro-top: 30px;
+  --hero-intro-top: 16px;
+  --control-min: 44px;
+}
+
+/* LIF-29 mobile homepage G: lion on the seam, 160px mark on iPhone SE. */
+@media (max-width: 767px) {
+  .split-home-page {
+    height: 100svh;
+    height: 100dvh;
+    overflow-x: hidden;
+  }
+}
+
+.split-home-g {
+  --home-g-mark: 222px;
+}
+
+.split-home-g .home-g-mark {
+  width: var(--home-g-mark) !important;
+  height: var(--home-g-mark) !important;
+  max-width: none;
+}
+
+.split-home-g .home-g-wordmark {
+  font-size: 46.67px;
+  line-height: 1.05;
+  width: 220px;
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+  .split-home-g {
+    --home-g-mark: 160px;
+  }
+
+  .split-home-g .home-g-brand {
+    padding-bottom: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --page-margin: 48px;
+    --grid-gutter: 24px;
+    --section-gap: 96px;
+    --page-intro-top: var(--space-120);
+    --hero-intro-top: 64px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --page-margin: 64px;
+    --section-gap: 96px;
+  }
+}
+
+@utility font-sans {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+@utility font-serif {
+  font-family: var(--font-serif), ui-serif, Georgia, serif;
+}
+
+@utility type-display {
+  font-family: var(--font-serif), ui-serif, Georgia, serif;
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+}
+
+@utility type-h1 {
+  font-family: var(--font-serif), ui-serif, Georgia, serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.32px;
+}
+
+@utility type-h2 {
+  font-family: var(--font-serif), ui-serif, Georgia, serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.32px;
+}
+
+@utility type-h3 {
+  font-family: var(--font-serif), ui-serif, Georgia, serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.24px;
+}
+
+@utility type-h4 {
+  font-family: var(--font-serif), ui-serif, Georgia, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0;
+}
+
+@utility type-emphasis {
+  font-family: var(--font-serif), ui-serif, Georgia, serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+@utility type-supporting {
+  font-family: var(--font-serif), ui-serif, Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+@utility type-lead {
+  font-family: var(--font-serif), ui-serif, Georgia, serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.44;
+  letter-spacing: 0;
+}
+
+@utility type-reading {
+  font-family: var(--font-serif), ui-serif, Georgia, serif;
+  font-weight: 300;
+  font-size: clamp(18px, 1.85vw, 24px);
+  line-height: 1.42;
+  letter-spacing: -0.005em;
+}
+
+@utility type-body-lg {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@utility type-body {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@utility type-body-sm {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@utility type-caption {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+@utility type-ui {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+@utility type-ui-control {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+@utility type-ui-compact {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+
+@utility type-ui-menu {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+@utility type-overline {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+@utility type-wordmark {
+  font-family: var(--font-serif), ui-serif, Georgia, serif;
+  font-weight: 300;
+  font-size: clamp(34px, 6vw, 84px);
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+}
+
+@utility type-route {
+  font-family: var(--font-serif), ui-serif, Georgia, serif;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 58px;
+  letter-spacing: -0.46px;
+}
+
+@media (min-width: 768px) {
+  .type-display {
+    font-size: 60px;
+    line-height: 1.04;
+    letter-spacing: -0.03em;
+  }
+
+  .type-h1 {
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: -0.4px;
+  }
+
+  .type-lead {
+    font-size: 28px;
+  }
+}
+
+@layer base {
+  html,
+  body {
+    min-height: 100%;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--surface-page);
+    color: var(--text-body);
+    font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Paper grain from the original site: feTurbulence fractalNoise at baseFrequency 0.85,
+     rasterized at 2× and shown as a 150px tile so retina screens do not enlarge it.
+     z-index 40 sits above the sticky header (z-20) and under the mobile menu (z-80). */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    pointer-events: none;
+    opacity: 0.035;
+    background-image: url('/brand/grain.png?v=2');
+    background-size: 150px 150px;
+  }
+
+  @media (prefers-reduced-transparency: reduce) {
+    body::after {
+      content: none;
+    }
+  }
+
+  @media print {
+    body::after {
+      content: none;
+    }
+  }
+
+  a {
+    color: inherit;
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 4px;
+  }
+
+  ::placeholder {
+    color: var(--field-placeholder);
+  }
+}
+
+/* Current fill and hover type were separate utilities, so ivory landed on the pale fill. */
+.menu-item {
+  color: var(--text-primary);
+}
+
+.menu-item.is-current {
+  background-color: var(--selection-hover-fill);
+}
+
+.menu-item:hover {
+  background-color: var(--color-sage);
+  color: var(--color-ivory);
+}
+
+@keyframes topic-acc-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes topic-acc-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
