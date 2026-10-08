@@ -25,7 +25,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p _site
-          cp -r index.html project-instructions.html llms.txt llms-full.txt manifest.json design-system templates assets _site/
+          cp -r index.html project-instructions.html llms.txt llms-full.txt manifest.json design-system templates assets archive _site/
           touch _site/.nojekyll
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5

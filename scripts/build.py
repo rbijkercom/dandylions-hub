@@ -228,5 +228,14 @@ for sec in M["sections"]:
             F += ["", "```svg", (ROOT / it["file"]).read_text(encoding="utf-8").strip(), "```"]
         F.append("")
 F += ["## Not included (placeholders)", ""] + [f"- {p['title']}: {p['note']}" for p in M["placeholders"]] + [""]
+if M.get("archive"):
+    F += ["## Archive (historical, not part of the active design system; not for new work)", ""] + [f"- {BASE}{a['file']}" for a in M["archive"]] + [""]
 (ROOT / "llms-full.txt").write_text("\n".join(F), encoding="utf-8")
+# archive page: not linked from the active pages
+if M.get("archive"):
+    for a in M["archive"]:
+        info(a["file"])
+    arc = "<h1>Archive</h1><p><strong>Historical reference only.</strong> These files are not part of the active DandyLions design system and must not be used for new work. For current tokens, templates and assets, use the main hub.</p>" + "".join(
+        f'<div class="card" style="max-width:640px;margin:16px 0"><img src="../{esc(a["file"])}" alt="{esc(a["title"])}" loading="lazy"><h3>{esc(a["title"])}</h3><p class="meta"><a href="{esc(BASE + a["file"])}">{esc(BASE + a["file"])}</a></p></div>' for a in M["archive"])
+    (ROOT / "archive" / "index.html").write_text(page("Archive (historical) · DandyLions hub", arc, 1), encoding="utf-8")
 print("built pages, llms.txt and llms-full.txt for", sum(c.values()), "files")

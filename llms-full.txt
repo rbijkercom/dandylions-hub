@@ -947,12 +947,6 @@ Header: caps section label left, 'NN / 13' right. Footer above a hairline: small
 - Looks like: Lockup with gold corner markers showing the clear space (x = one wordmark cap height). Minimum widths: full lockup 180 px, symbol 80 px, wordmark 120 px.
 - Source: Figma file ADAT7igJnBG5nvij5shy9V, node 329:14583 (Brand identity style guide › 04 — Logo clear space & minimum size · Light)
 
-### Brand guide 05: colour palette
-- URL: https://rbijkercom.github.io/dandylions-hub/templates/brand-guide/brand-guide-05-colour-palette.png
-- Format: PNG, 1920 x 1080 px (Guide page 16:9)
-- Looks like: Core palette swatches (ivory, sage, charcoal, gold, gold deep, pale sage) and support palette (control fill, control border, card surface, card border, body ink, selected sand, error) with hex and RGB values.
-- Source: Figma file ADAT7igJnBG5nvij5shy9V, node 329:14722 (Brand identity style guide › 05 — Colour palette · Light)
-
 ### Brand guide 06: themes and accents
 - URL: https://rbijkercom.github.io/dandylions-hub/templates/brand-guide/brand-guide-06-themes-accents.png
 - Format: PNG, 1920 x 1080 px (Guide page 16:9)
@@ -1609,3 +1603,7 @@ Line icons. Strokes and fills use currentColor; the root sets color="#2D2D2D" (c
 - Newsletter footer: Cropped out of the newsletter images because it shows company registration and VAT numbers. [TO BE SUPPLIED BY RUBEN: a footer version without them, if needed]
 - Video / reel covers and animated formats: None found in Figma or the site repo. [TO BE SUPPLIED BY RUBEN: if wanted]
 - Horizontal (side-by-side) logo lockup: None found; only the stacked lockup, symbol and wordmark exist. [TO BE SUPPLIED BY RUBEN: if wanted]
+
+## Archive (historical, not part of the active design system; not for new work)
+
+- https://rbijkercom.github.io/dandylions-hub/archive/brand-guide-05-colour-palette-historical.png

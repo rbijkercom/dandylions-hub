@@ -12,6 +12,7 @@
 | `assets/logos/`, `assets/svg/` | Logo SVG/PNG files, seed graphics | Figma exports (logo formats, social pack) and the site repo (`public/`, `reference/`) |
 | `assets/icons/` | Icon SVGs | Site repo `src/components/ui/Icon.tsx`, converted to standalone SVG |
 | `assets/graphics/` | Paper grain texture | Site repo `public/brand/grain.png` |
+| `archive/` | Historical files, not part of the active design system; not linked from the active pages | Moved out of the active hub (see `archive/README.md`) |
 | `manifest.json` | List of every file with title, description, source | Edited by hand |
 | `index.html`, `*/index.html`, `project-instructions.html`, `llms.txt`, `llms-full.txt` | Generated pages | `python3 scripts/build.py` |
 

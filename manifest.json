@@ -296,13 +296,6 @@
           "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 329:14583 (Brand identity style guide › 04 — Logo clear space & minimum size · Light)"
         },
         {
-          "file": "templates/brand-guide/brand-guide-05-colour-palette.png",
-          "title": "Brand guide 05: colour palette",
-          "format_label": "Guide page 16:9",
-          "description": "Core palette swatches (ivory, sage, charcoal, gold, gold deep, pale sage) and support palette (control fill, control border, card surface, card border, body ink, selected sand, error) with hex and RGB values.",
-          "source": "Figma file ADAT7igJnBG5nvij5shy9V, node 329:14722 (Brand identity style guide › 05 — Colour palette · Light)"
-        },
-        {
           "file": "templates/brand-guide/brand-guide-06-themes-accents.png",
           "title": "Brand guide 06: themes and accents",
           "format_label": "Guide page 16:9",
@@ -741,6 +734,12 @@
     {
       "title": "Horizontal (side-by-side) logo lockup",
       "note": "None found; only the stacked lockup, symbol and wordmark exist. [TO BE SUPPLIED BY RUBEN: if wanted]"
+    }
+  ],
+  "archive": [
+    {
+      "file": "archive/brand-guide-05-colour-palette-historical.png",
+      "title": "Brand guide page 05 (historical)"
     }
   ]
 }
