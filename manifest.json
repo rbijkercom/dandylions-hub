@@ -2,7 +2,7 @@
   "name": "DandyLions hub",
   "base_url": "https://rbijkercom.github.io/dandylions-hub/",
   "raw_base_url": "https://raw.githubusercontent.com/rbijkercom/dandylions-hub/main/",
-  "updated": "2026-10-08",
+  "updated": "2026-10-10",
   "tokens": [
     {
       "file": "design-system/tokens.json",

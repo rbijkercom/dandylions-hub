@@ -128,7 +128,7 @@
     "type-display": {
       "font-family": "var(--font-serif), ui-serif, Georgia, serif",
       "font-weight": "300",
-      "font-size": "44px",
+      "font-size": "40px",
       "line-height": "1.04",
       "letter-spacing": "-0.03em"
     },
@@ -176,7 +176,7 @@
     "type-lead": {
       "font-family": "var(--font-serif), ui-serif, Georgia, serif",
       "font-weight": "300",
-      "font-size": "20px",
+      "font-size": "19px",
       "line-height": "1.44",
       "letter-spacing": "0"
     },

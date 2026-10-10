@@ -1,6 +1,6 @@
 # DandyLions hub (full)
 
-Source: https://rbijkercom.github.io/dandylions-hub/ (public, read-only, maintained by Ruben Bijker). Updated 2026-10-08.
+Source: https://rbijkercom.github.io/dandylions-hub/ (public, read-only, maintained by Ruben Bijker). Updated 2026-10-10.
 Contents: design tokens, template images and brand assets. There is no copywriting guidance in this hub. The text inside template images is sample text from the Figma file.
 
 ## How to use (for Claude)
@@ -29,7 +29,7 @@ URL: https://rbijkercom.github.io/dandylions-hub/design-system/tokens.json
       "Figma file ADAT7igJnBG5nvij5shy9V, page '01 — Brand & system' (variables, Brand identity style guide)"
     ],
     "note": "Curated design tokens. When the site and Figma disagree, the site (code) wins. design-system/css-tokens.json is the raw snapshot of the site's CSS custom properties, refreshed by the daily sync.",
-    "updated": "2026-10-08"
+    "updated": "2026-10-10"
   },
   "color": {
     "primitives": {
@@ -257,12 +257,12 @@ URL: https://rbijkercom.github.io/dandylions-hub/design-system/tokens.json
         "fallback": "Arial, Helvetica, sans-serif"
       }
     },
-    "scaleNote": "Type scale: 28 and up gets a mobile size, plus Supporting italic (22 to 18); everything else doesn't, and only the wordmark and reading text scale smoothly.",
+    "scaleNote": "Type scale: 28 and up gets a mobile size, plus Lead (26 to 19) and Supporting italic (22 to 18); everything else doesn't, and only the wordmark and reading text scale smoothly.",
     "scale": {
       "display": {
         "family": "serif",
         "weight": 300,
-        "size": "44px mobile / 60px from 768px",
+        "size": "40px mobile / 55px from 768px",
         "lineHeight": 1.04,
         "letterSpacing": "-3%"
       },
@@ -296,7 +296,7 @@ URL: https://rbijkercom.github.io/dandylions-hub/design-system/tokens.json
       "lead": {
         "family": "serif",
         "weight": 300,
-        "size": "20px mobile / 28px desktop",
+        "size": "19px mobile / 26px desktop",
         "lineHeight": 1.44
       },
       "reading": {
@@ -585,7 +585,7 @@ URL: https://rbijkercom.github.io/dandylions-hub/design-system/css-tokens.json
     "type-display": {
       "font-family": "var(--font-serif), ui-serif, Georgia, serif",
       "font-weight": "300",
-      "font-size": "44px",
+      "font-size": "40px",
       "line-height": "1.04",
       "letter-spacing": "-0.03em"
     },
@@ -633,7 +633,7 @@ URL: https://rbijkercom.github.io/dandylions-hub/design-system/css-tokens.json
     "type-lead": {
       "font-family": "var(--font-serif), ui-serif, Georgia, serif",
       "font-weight": "300",
-      "font-size": "20px",
+      "font-size": "19px",
       "line-height": "1.44",
       "letter-spacing": "0"
     },
